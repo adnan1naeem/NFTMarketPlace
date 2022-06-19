@@ -4,9 +4,9 @@ const NftDetails = (props) => {
   return (
     <div>
      <div className="h-60 w-60 ml-5 mr-5">
-               <div className="flex justify-center items-center">
+               <div className="flex justify-start items-center">
                 <h1 className="text-lg font-semibold pt-5">{props.title}</h1>
-               <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 ml-3 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/heart-icon2.svg"/></span><span className='mt-5 ml-2 font-semibold'>{props.likes}</span>
+               <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 ml-7 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/heart-icon2.svg"/></span><span className='mt-5 ml-2 font-semibold'>{props.likes}</span>
                 </div>
                 <div className="flex">
                   <div className="w-10 h-10 bg-gray-400 rounded-full mt-3 ml-3">
