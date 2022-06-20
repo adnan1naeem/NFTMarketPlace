@@ -8,9 +8,12 @@ import footerbg from "../../assets/Images/footer-bg.svg";
 const Root = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
-  margin: "3% 7%",
+  padding: "5% 7%",
   flexWrap: "wrap",
-  backgroundImage: "url`(${footerbg})`",
+  backgroundImage: `url(${footerbg})`,
+  backgroundRepeat: "no-repeat",
+  backgroundSize: "cover",
+  minHeight: 500,
   [theme.breakpoints.only("xs")]: {
     margin: "3%",
   },

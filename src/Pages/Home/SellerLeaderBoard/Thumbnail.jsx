@@ -14,10 +14,14 @@ const Card = styled(Box)(({ theme }) => ({
   // width: "100%",
   display: "flex",
   alignItems: "center",
+  justifyContent: "center",
   marginBottom: 30,
   padding: "1% 0%",
+  transition: "box-shadow .5s ease-in-out",
+
   "&:hover": {
     boxShadow: "0 1rem 3rem rgba(0,0,0,.175)",
+    transition: "box-shadow .5s ease",
     cursor: "pointer",
   },
 }));
@@ -33,7 +37,7 @@ export const Thumbnail = () => {
     <Root>
       {sellerLeaderboardData.map((item) => (
         <Card key={item.id}>
-          <Flex sx={{ width: 250 }}>
+          <Flex>
             <Flex
               sx={{
                 color: "rgba(15,23,42)",
