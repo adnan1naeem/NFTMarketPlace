@@ -1,9 +1,12 @@
-import './App.css';
+import { Footer } from "Pages/Footer";
+import { Home } from "Pages/Home";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-red-500 bg-gray-300">Tailwind Setup</h1>
+      <Home />
+      <Footer />
     </div>
   );
 }

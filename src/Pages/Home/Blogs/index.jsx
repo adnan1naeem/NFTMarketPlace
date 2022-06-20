@@ -1,6 +1,6 @@
-import { blogsData } from "assets/Data";
 import React from "react";
+import { Card } from "./Card";
 
 export const Blogs = () => {
-  return <div></div>;
+  return <Card />;
 };
