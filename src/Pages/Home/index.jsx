@@ -15,6 +15,7 @@ const Home = () => {
        <SellerLeaderBorad />
       <Blogs />
     </div>
+    
   );
 }
 export default Home;

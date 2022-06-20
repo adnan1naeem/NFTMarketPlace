@@ -24,8 +24,8 @@ const NftDetails = (props) => {
                   <h1 className="ml-2">=${props.priceInDoller}</h1>
                 </div>
                 <div className="mt-20 w-1/2">
-                    <div className="w-full h-10 border-4 rounded-lg border-blue-400 hover:bg-blue-400 text-blue-400 hover:text-white">
-                    <h1 className="">Place a bid</h1>
+                    <div className="w-full h-10 border-2 rounded-lg border-blue-400 bg-gradient-to-r hover:border-white hover:from-purple-500 hover:to-indigo-500 text-blue-400 hover:text-white">
+                    <h1 className="" style={{marginTop: '4px'}}>Place a bid</h1>
                     </div>
                     <h1 className="text-xs">{props.bids} bids total</h1>
                 </div>

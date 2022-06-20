@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
-import { images } from 'assets/Images'
+import React, { useState, useEffect } from 'react';
+import { NavLink, useLocation } from 'react-router-dom';
+import { images } from 'assets/Images';
+import { useDispatch, useSelector } from "react-redux";
+import {
+  connectMetaMask,
+  checkAlreadyConnectedMetaMask,
+} from "redux/thunk/thunk";
 const Navbar = ({ screen }) => {
   // const {props:any}= props`
+  const dispatch = useDispatch();
+  const location = useLocation();
+  const state = useSelector((state) => state);
   const [hidden, setHidden] = useState(true)
-  const [showHomeMenu, setShowHomeMenu] = useState(false)
   const [showExploreMenu, setShowExploreMenu] = useState(false)
   const [showPageMenu, setShowPageMenu] = useState(false)
   const [showSubAuthorMenu, setShowSubAuthorMenu] = useState(false)
@@ -13,9 +20,6 @@ const Navbar = ({ screen }) => {
   const [scroll, setScroll] = useState(false)
   const openMobileNav = () => {
     setHidden(!hidden)
-  }
-  const handleHomeHover = () => {
-    setShowHomeMenu(!showHomeMenu)
   }
   const handleExploreHover = () => {
     setShowExploreMenu(!showExploreMenu)
@@ -32,9 +36,21 @@ const Navbar = ({ screen }) => {
   const handleSubBlogHover = () => {
     setShowSubBlogMenu(!showSubBlogMenu);
   }
+  const connectToMetaMask = () => {
+    dispatch(connectMetaMask());
+  };
+
   useEffect(() => {
-    window.addEventListener('scroll', listenToScroll)
-  }, [])
+    console.log('connection is :', state?.connection, ' and balance is ', state?.userBalance, ' wallet  address is ', state?.address)
+    window.addEventListener("scroll", listenToScroll);
+    const interval = setInterval(() => {
+      dispatch(checkAlreadyConnectedMetaMask(state?.connection));
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   const listenToScroll = () => {
     let i = 0
 
@@ -47,14 +63,15 @@ const Navbar = ({ screen }) => {
       setScroll(false)
     }
   }
+  
   return (
-    <div className='lg:flex lg:justify-center'>
+    <div className='lg:flex lg:justify-center w-full'>
       <nav
         className={` 
          px-5
-     flex items-center justify-between lg:justify-start  flex-wrap hover:bg-white py-5 md:py-2 z-40 lg:fixed text-white lg:w-100 lg:h-20 ${
+     flex items-center justify-between lg:justify-start  flex-wrap hover:bg-white py-5 md:py-2 z-40 lg:fixed text-white lg:h-20 ${
        scroll ? 'bg-white' : 'bg-transparent'
-     }`}
+     }`} style={{maxWidth: '1900px'}}
       >
         <div className='flex flex-shrink-0 w-32 sm:w-48 lg:-mt-20 lg:-ml-2 xl:ml-16'>
           <img
@@ -91,8 +108,7 @@ const Navbar = ({ screen }) => {
               <div className='flex flex-col lg:flex-row items-center lg:items-start lg:mt-1 justify-center'>
                 <NavLink
                   to=''
-                  onMouseOver={handleHomeHover}
-                  onMouseOut={handleHomeHover}
+                  
                   className={`m-2 block mr-2 xl:mr-4 2xl:mr-9 xl:ml-20 lg:inline-block lg:mt-0 font-body text-base 
           
             `}
@@ -107,21 +123,7 @@ const Navbar = ({ screen }) => {
                       />
                     </div>
                   </span>
-                  <div
-                    className={`w-32 h-32 bg-white shadow shadow-xl absolute ${
-                      showHomeMenu ? 'lg:flex lg:flex-col' : 'hidden'
-                    }`}
-                  >
-                    <div className='w-full h-12 hover:bg-blue-200 flex items-center justify-center'>
-                      <h1 className='pt-2'>Home v1</h1>
-                    </div>
-                    <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-center'>
-                      <h1 className=''>Home v2</h1>
-                    </div>
-                    <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-center'>
-                      <h1 className=''>Home v3</h1>
-                    </div>
-                  </div>
+                  
                 </NavLink>
                 <NavLink
                   to=''
@@ -323,8 +325,15 @@ const Navbar = ({ screen }) => {
                 </div>
               </div>
 
-              <button className='rounded h-12 -mt-1 font-semibold px-3 font-body py-2 text-lg md:mb-10 ml-2 text-white lg:mr-0 xl:mr-20 bg-white bg-gradient-to-r from-indigo-500 to-purple-500'>
-                Connect Wallet
+              <button className='rounded h-12 -mt-1 font-semibold px-3 font-body py-2 text-lg md:mb-10 ml-2 text-white lg:mr-0 xl:mr-20 bg-white bg-gradient-to-r from-indigo-500 to-purple-500' onClick={connectToMetaMask}
+            disabled={state?.connection}>
+            {!state?.connection ? <>Connect Wallet</> :
+            <span className="">
+                  {" "}
+                  {state?.address[0]?.substr(0, 10)}{" "}
+                </span>
+            }
+                
               </button>
             </div>
           </div>
