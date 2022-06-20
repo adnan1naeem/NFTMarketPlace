@@ -9,7 +9,6 @@ const Root = styled(Box)(({ theme }) => ({
   flexWrap: "wrap",
   alignItems: "center",
   display: "flex",
-
   justifyContent: "flex-start",
   [theme.breakpoints.down("md")]: {
     margin: "0px 0%",
@@ -44,8 +43,7 @@ const Image = styled("img")(({ theme }) => ({
   width: "100%",
   height: "16rem",
   borderRadius: 8,
-  transition: " transform .5s ease-in-out",
-
+  transition: "transform .5s ease-in-out",
   "&:hover": {
     transform: "scale(1.05)",
     transition: "transform .5s ease",
