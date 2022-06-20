@@ -1,9 +1,13 @@
 import './App.css';
-import Home from './Pages/Home';
+import { Footer } from "Pages/Footer";
+import  Home  from "Pages/Home";
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
       <Home />
+      <Footer />
     </div>
   );
 }
