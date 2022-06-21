@@ -15,7 +15,7 @@ const Root = styled(Box)(({ theme }) => ({
   backgroundSize: "cover",
   minHeight: 500,
   [theme.breakpoints.only("xs")]: {
-    margin: "3%",
+    margin: "0%",
   },
 }));
 export const Footer = () => {

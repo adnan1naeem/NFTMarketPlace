@@ -10,6 +10,13 @@ import item2 from "./Images/Seller LeaderBoard/2.jpg";
 import item3 from "./Images/Seller LeaderBoard/3.jpg";
 import item4 from "./Images/Seller LeaderBoard/4.jpg";
 import item5 from "./Images/Seller LeaderBoard/5.jpg";
+import explore2 from "./Images/4.gif";
+import explore5 from "./Images/explore/5.gif";
+import explore6 from "./Images/explore/6.gif";
+import explore7 from "./Images/explore/7.gif";
+import explore3 from "./Images/explore/20.jpg";
+import explore4 from "./Images/explore/21.jpg";
+
 import Save from "./Images/Home/Save.jpg";
 
 export const blogsData = [
@@ -119,4 +126,176 @@ export const communityData = [
   { text: "  Item Details v2", id: "id2" },
   { text: "Activity", id: "ac" },
   { text: "Contact", id: "cn" },
+];
+export const exploreCardData = [
+  {
+    img: item1,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore2,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore3,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore4,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore5,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore6,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore7,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore4,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore4,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
+  {
+    img: explore4,
+    imgs: [
+      {
+        img: steven,
+      },
+      {
+        img: leah,
+      },
+      {
+        img: joana,
+      },
+    ],
+    likes: "90",
+    heading: "Creative Oilpaint #07",
+    id: "co",
+  },
 ];

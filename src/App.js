@@ -1,11 +1,11 @@
 import { Footer } from "Pages/Footer";
-import { Home } from "Pages/Home";
+import NFTRoutes from "routes";
 import "./App.css";
 
 function App() {
   return (
     <div className="App" style={{}}>
-      <Home />
+      <NFTRoutes />
       <Footer />
     </div>
   );
