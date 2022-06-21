@@ -8,7 +8,7 @@ import { SellerLeaderBorad } from "./SellerLeaderBoard";
 const Home = () => {
   return (
     <div>
-       <Navbar />
+      <Navbar />
        <Header />
       <NftCollection />
       <LiveAuctions />

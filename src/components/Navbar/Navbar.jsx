@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { images } from 'assets/Images';
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -17,6 +17,7 @@ const Navbar = ({ screen }) => {
   const [showSubAuthorMenu, setShowSubAuthorMenu] = useState(false)
   const [showSubUserMenu, setShowSubUserMenu] = useState(false)
   const [showSubBlogMenu, setShowSubBlogMenu] = useState(false)
+  const navigate = useNavigate();
   const [scroll, setScroll] = useState(false)
   const openMobileNav = () => {
     setHidden(!hidden)
@@ -107,7 +108,7 @@ const Navbar = ({ screen }) => {
             <div className='lg:-mt-7 text-black lg:flex'>
               <div className='flex flex-col lg:flex-row items-center lg:items-start lg:mt-1 justify-center'>
                 <NavLink
-                  to=''
+                  to='/'
                   
                   className={`m-2 block mr-2 xl:mr-4 2xl:mr-9 xl:ml-20 lg:inline-block lg:mt-0 font-body text-base 
           
@@ -149,7 +150,8 @@ const Navbar = ({ screen }) => {
                     }`}
                   >
                     <div className='w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                      <h1 className='pt-2'>Explore v1</h1>
+                    <NavLink
+                  to='/explore'> <h1 className='pt-2'>Explore v1</h1></NavLink>
                     </div>
                     <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
                       <h1 className=''>Item Details v1</h1>

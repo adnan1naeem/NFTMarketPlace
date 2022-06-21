@@ -1,5 +1,6 @@
 import React from 'react';
 const Header = () => {
+
   return (
     <div className="flex flex-col items-center">
     <div className="bg-gradient-to-r from-pink-100 to-purple-100" style={{

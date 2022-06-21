@@ -9,8 +9,7 @@ const Root = styled(Box)(({ theme }) => ({
   flexWrap: "wrap",
   alignItems: "center",
   display: "flex",
-
-  justifyContent: "flex-start",
+  justifyContent: "center",
   [theme.breakpoints.down("md")]: {
     margin: "0px 0%",
     justifyContent: "center",
@@ -23,9 +22,11 @@ const Thumbnail = styled("div")(({ theme }) => ({
   marginRight: "2rem",
   overflow: "hidden",
   marginTop: "2rem",
+  transition: "box-shadow .5s ease-in-out",
   "&:hover": {
     boxShadow: "0 1rem 3rem rgba(0,0,0,.175)",
     cursor: "pointer",
+    transition: "box-shadow .5s ease",
   },
   [theme.breakpoints.down("md")]: {
     width: "330px",
@@ -44,8 +45,7 @@ const Image = styled("img")(({ theme }) => ({
   width: "100%",
   height: "16rem",
   borderRadius: 8,
-  transition: " transform .5s ease-in-out",
-
+  transition: "transform .5s ease-in-out",
   "&:hover": {
     transform: "scale(1.05)",
     transition: "transform .5s ease",

@@ -7,7 +7,7 @@ const Image = styled("img")(({ theme }) => ({
   //   transition: "width 2s",
 }));
 const Flex = styled(Box)(({ theme }) => ({
-  width: 400,
+  // width: 400,
   display: "flex",
   [theme.breakpoints.only("xs")]: {
     display: "none",
