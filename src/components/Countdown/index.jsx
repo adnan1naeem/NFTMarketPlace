@@ -1,13 +1,21 @@
+import { Box } from "@mui/material";
 import React from "react";
-import "./styles.css";
 
 class Clock extends React.Component {
   render() {
     return (
-      <div className="box">
+      <Box
+        sx={{
+          display: "flex",
+          alignContent: "flex-start",
+          justifyContent: "flex-start",
+          marginTop: 2,
+          marginBottom: 2,
+        }}
+      >
         <p
           style={{
-            fontSize: "16px",
+            fontSize: "18px",
             color: "#475569",
             fontWeight: 400,
             marginTop: 6,
@@ -15,19 +23,47 @@ class Clock extends React.Component {
         >
           Aution ends in:
         </p>
-        <div className="dd block">
-          <h2>{this.props.dd}d</h2>
-        </div>
-        <div className="hh block">
-          <h2>{this.props.hh}h</h2>
-        </div>
-        <div className="mm block">
-          <h2>{this.props.mm}m</h2>
-        </div>
-        <div className="ss block">
-          <h2>{this.props.ss}s</h2>
-        </div>
-      </div>
+        <Box
+          sx={{
+            fontSize: "18px",
+            margin: "5px",
+            width: "40px",
+            fontWeight: 600,
+          }}
+        >
+          <Box>{this.props.dd}d</Box>
+        </Box>
+        <Box
+          sx={{
+            fontSize: "18px",
+            margin: "5px",
+            width: "30px",
+            fontWeight: 600,
+          }}
+        >
+          <Box>{this.props.hh}h</Box>
+        </Box>
+        <Box
+          sx={{
+            fontSize: "18px",
+            margin: "5px",
+            width: "30px",
+            fontWeight: 600,
+          }}
+        >
+          <Box>{this.props.mm}m</Box>
+        </Box>
+        <Box
+          sx={{
+            fontSize: "18px",
+            margin: "5px",
+            width: "30px",
+            fontWeight: 600,
+          }}
+        >
+          <Box>{this.props.ss}s</Box>
+        </Box>
+      </Box>
     );
   }
 }
@@ -67,7 +103,7 @@ export default class CountDown extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="parent">
         <Clock {...this.state} />
       </div>
     );
