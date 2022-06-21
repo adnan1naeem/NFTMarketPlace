@@ -1,3 +1,4 @@
+import { ExploreItem } from "Pages/EploreItem";
 import { Explore } from "Pages/Explore";
 import Home from "Pages/Home";
 
@@ -9,6 +10,7 @@ const NFTRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
+        <Route path="/exploreitem" element={<ExploreItem />} />
       </Routes>
     </BrowserRouter>
   );
