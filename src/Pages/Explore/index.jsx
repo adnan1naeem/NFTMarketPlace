@@ -24,10 +24,9 @@ const Text = styled(Typography)(({ theme }) => ({
 export const Explore = () => {
   const navigate = useNavigate();
   return (
-    <div style={{ marginBottom: "5rem" }}>
+    <div style={{ marginBottom: "1rem" }}>
       <Navbar />
-
-      <Box sx={{ display: "flex", margin: "8% 8.5%" }}>
+      <Box sx={{ display: "flex", margin: "5% 8.5%" }}>
         <Heading>Explore</Heading>
       </Box>
       <Box sx={{ display: "flex", margin: "0% 8.5%", alignItems: "center" }}>
