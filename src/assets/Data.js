@@ -29,10 +29,46 @@ export const nftCollectionData = [
   { id: 8, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/8.jpg", title: "Rare Collections", items: '12' }
 ];
 export const nftAuctionData = [
-  { id: 1, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/28.jpg", title: "Creative Artwork", likes: "88", priceInEth: "0.008", priceInDoller: "26.69", bids: "12" },
-  { id: 2, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/1.gif", title: "Pumpkin Month", likes: "10", priceInEth: "0.003", priceInDoller: "13.69", bids: "10" },
-  { id: 3, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/2.webp", title: "Pink Love", likes: "17", priceInEth: "0.001", priceInDoller: "9.24", bids: "2" },
-  { id: 4, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/3.gif", title: "Token Hero", likes: "88", priceInEth: "0.005", priceInDoller: "16.69", bids: "14" },
+  {
+    id: 1,
+    nftUrl:
+      "https://html-tokenmart.netlify.app/light/assets/images/product/28.jpg",
+    title: "Creative Artwork",
+    likes: "88",
+    priceInEth: "0.008",
+    priceInDoller: "26.69",
+    bids: "12",
+  },
+  {
+    id: 2,
+    nftUrl:
+      "https://html-tokenmart.netlify.app/light/assets/images/product/1.gif",
+    title: "Pumpkin Month",
+    likes: "10",
+    priceInEth: "0.003",
+    priceInDoller: "13.69",
+    bids: "10",
+  },
+  {
+    id: 3,
+    nftUrl:
+      "https://html-tokenmart.netlify.app/light/assets/images/product/2.webp",
+    title: "Pink Love",
+    likes: "17",
+    priceInEth: "0.001",
+    priceInDoller: "9.24",
+    bids: "2",
+  },
+  {
+    id: 4,
+    nftUrl:
+      "https://html-tokenmart.netlify.app/light/assets/images/product/3.gif",
+    title: "Token Hero",
+    likes: "88",
+    priceInEth: "0.005",
+    priceInDoller: "16.69",
+    bids: "14",
+  },
 ];
 export const walletsData = [
   { id: 1, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/1.jpg", title: "Trust Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
@@ -335,5 +371,82 @@ export const exploreCardData = [
     likes: "90",
     heading: "Creative Oilpaint #07",
     id: "co",
+  },
+];
+
+export const exploreItemData = [
+  {
+    img: steven,
+    name: "Steven Fleming",
+    time: "1 hour ago",
+    id: "st",
+    ammount: "0.073",
+    approx: "8.54",
+  },
+  {
+    img: leah,
+    name: "Leah Vicent",
+    time: "3 hour ago",
+    id: "le",
+    ammount: "0.084",
+    approx: "5.94",
+  },
+  {
+    img: joana,
+    name: "joana Fleming",
+    time: "3 days ago",
+    id: "jo",
+    approx: "9.84",
+    ammount: "0.873",
+  },
+  {
+    img: trinity,
+    name: "trinity Fleming",
+    time: "1 day ago",
+    id: "tr",
+    ammount: "0.097",
+    approx: "11.24",
+  },
+  {
+    img: steven,
+    name: "Steven Fleming",
+    time: "7 hour ago",
+    id: "at",
+    ammount: "0.059",
+    approx: "6.76",
+  },
+];
+export const exploreItemHistoryData = [
+  {
+    img: trinity,
+    name: "trinity Fleming",
+    time: "1 day ago",
+    id: "tr",
+  },
+  {
+    img: steven,
+    name: "Steven Fleming",
+    time: "1 hour ago",
+    id: "st",
+  },
+
+  {
+    img: leah,
+    name: "Leah Vicent",
+    time: "3 hour ago",
+    id: "le",
+  },
+  {
+    img: joana,
+    name: "joana Fleming",
+    time: "3 days ago",
+    id: "jo",
+  },
+
+  {
+    img: steven,
+    name: "Steven Fleming",
+    time: "7 hour ago",
+    id: "at",
   },
 ];
