@@ -37,6 +37,7 @@ const LiveAuctions = () => {
                     <h1 className="ml-2 font-semibold">Min</h1>
                     <h1 className="ml-2 font-semibold">Sec</h1>
                     </div>
+                    
               </div>
                </div>
                <NftDetails title={i.title} likes={i.likes} priceInEth={i.priceInEth} priceInDoller={i.priceInDoller} bids={i.bids}/>
