@@ -157,7 +157,7 @@ const Navbar = ({ screen }) => {
                       <h1 className=''>Item Details v1</h1>
                     </div>
                     <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                      <h1 className=''>Wallet</h1>
+                      <NavLink to="/wallet"><h1 className=''>Wallet</h1></NavLink>
                     </div>
                   </div>
                 </NavLink>

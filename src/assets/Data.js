@@ -19,14 +19,14 @@ import explore4 from "./Images/explore/21.jpg";
 
 import Save from "./Images/Home/Save.jpg";
 export const nftCollectionData = [
-  { id: 1, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/7.gif" },
-  { id: 2, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/2.jpg" },
-  { id: 3, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/3.jpg" },
-  { id: 4, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/4.jpg" },
-  { id: 5, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/5.jpg" },
-  { id: 6, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/6.jpg" },
-  { id: 7, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/7.jpg" },
-  { id: 8, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/8.jpg" }
+  { id: 1, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/7.gif", title: "Cartoon Art", items: '12'},
+  { id: 2, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/2.jpg", title: "Super Heros", items: '12' },
+  { id: 3, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/3.jpg", title: "Oilprint", items: '12' },
+  { id: 4, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/4.jpg", title: "Virtual Worlds", items: '12' },
+  { id: 5, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/5.jpg", title: "Oil Paint", items: '12' },
+  { id: 6, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/6.jpg", title: "Collectibles", items: '12' },
+  { id: 7, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/7.jpg", title: "Trading Card", items: '12' },
+  { id: 8, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/category/8.jpg", title: "Rare Collections", items: '12' }
 ];
 export const nftAuctionData = [
   { id: 1, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/28.jpg", title: "Creative Artwork", likes: "88", priceInEth: "0.008", priceInDoller: "26.69", bids: "12" },
@@ -34,7 +34,29 @@ export const nftAuctionData = [
   { id: 3, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/2.webp", title: "Pink Love", likes: "17", priceInEth: "0.001", priceInDoller: "9.24", bids: "2" },
   { id: 4, nftUrl: "https://html-tokenmart.netlify.app/light/assets/images/product/3.gif", title: "Token Hero", likes: "88", priceInEth: "0.005", priceInDoller: "16.69", bids: "14" },
 ];
-
+export const walletsData = [
+  { id: 1, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/1.jpg", title: "Trust Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 2, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/2.jpg", title: "Trustee Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 3, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/3.jpg", title: "CoinPayments Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 4, imgUrl: "	https://html-tokenmart.netlify.app/light/assets/images/wallet/4.jpg", title: "SwirlWallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 5, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/5.jpg", title: "Trezor Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 6, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/6.jpg", title: "Nuri Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 7, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/7.jpg", title: "SpectroCoin Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 8, imgUrl: "	https://html-tokenmart.netlify.app/light/assets/images/wallet/8.jpg", title: "CoolWallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 9, imgUrl: "	https://html-tokenmart.netlify.app/light/assets/images/wallet/9.jpg", title: "SecuX Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 10, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/10.jpg", title: "Amon Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 11, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/11.jpg", title: "OWNR Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 12, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/12.jpg", title: "Infinito Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 13, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/13.jpg", title: "Zumo Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 14, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/14.jpg", title: "CryptX Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 15, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/15.jpg", title: "JuBiter Blade", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 16, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/16.jpg", title: "Edge Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 17, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/17.jpg", title: "Unstoppable Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 18, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/18.jpg", title: "Xapo Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 19, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/19.jpg", title: "Guarda Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  { id: 20, imgUrl: "https://html-tokenmart.netlify.app/light/assets/images/wallet/20.jpg", title: "Bread Wallet", description: 'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….'},
+  
+]
 export const blogsData = [
   {
     img: Mindfullness,

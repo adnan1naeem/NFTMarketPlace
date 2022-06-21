@@ -2,6 +2,7 @@ import NftDetails from 'components/NftDetails/NftDetails';
 import NftView from 'components/NftView/NftView';
 import { nftAuctionData } from 'assets/Data';
 import React,{useState} from 'react';
+import Timer from 'components/Timer/Timer';
 const LiveAuctions = () => {
   
   const [showTimer, setShowTimer] = useState(0);
@@ -25,19 +26,7 @@ const LiveAuctions = () => {
                <div>
                <NftView link={i.nftUrl}/>
                <div className={`w-44 h-16 rounded-lg border-blue-400 text-blue-400 absolute -mt-24 ml-20 bg-gradient-to-r from-indigo-500 to-purple-500 ${showTimer === i.id ? '' : 'hidden'}`}>
-                    <div className="flex items-center justify-center text-white pt-1">
-                    <h1 className="font-semibold">06</h1>
-                    <h1 className="ml-5 font-semibold">13</h1>
-                    <h1 className="ml-5 font-semibold">50</h1>
-                    <h1 className="ml-5 font-semibold">23</h1>
-                    </div>
-                    <div className="flex items-center justify-center text-white">
-                    <h1>Days</h1>
-                    <h1 className="ml-2 font-semibold">Hrs</h1>
-                    <h1 className="ml-2 font-semibold">Min</h1>
-                    <h1 className="ml-2 font-semibold">Sec</h1>
-                    </div>
-                    
+                    <Timer nftNum={i.id}/>
               </div>
                </div>
                <NftDetails title={i.title} likes={i.likes} priceInEth={i.priceInEth} priceInDoller={i.priceInDoller} bids={i.bids}/>

@@ -1,7 +1,15 @@
 import NftView from 'components/NftView/NftView';
 import {nftCollectionData} from '../../../assets/Data.js'
-import React from 'react';
+import React,{useState} from 'react';
+import NftName from 'components/NftName/NftName.jsx';
 const NftCollection = () => {
+  const [showTimer, setShowTimer] = useState(0);
+  const handleHover =(id)=>{
+      setShowTimer(id);
+  }
+  const handleHoverOut =(id)=>{
+    setShowTimer(0);
+}
   return (
     <div className="flex flex-col items-center">
     <div style={{maxWidth: '1700px'}}>
@@ -11,7 +19,12 @@ const NftCollection = () => {
       <div className="flex flex-wrap items-center justify-center w-full 2xl:w-4/5">
       {nftCollectionData.map((i)=>{
         return(
+          <div onMouseOver={()=>handleHover(i.id)} onMouseOut={()=>handleHoverOut(i.id)}>
           <NftView link={i.nftUrl}/>
+          <div className={`w-44 h-20 rounded-lg border-blue-400 absolute -mt-24 ml-14 bg-white ${showTimer === i.id ? '' : 'hidden'}`}>
+                    <NftName title={i.title} totalItems={i.items}/>
+              </div>
+              </div>
           )
       })}
 
