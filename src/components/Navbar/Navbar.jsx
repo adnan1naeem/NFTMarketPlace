@@ -325,12 +325,12 @@ const Navbar = ({ screen }) => {
                 </div>
               </div>
 
-              <button className='rounded h-12 -mt-1 font-semibold px-3 font-body py-2 text-lg md:mb-10 ml-2 text-white lg:mr-0 xl:mr-20 bg-white bg-gradient-to-r from-indigo-500 to-purple-500' onClick={connectToMetaMask}
+              <button className='rounded h-12 -mt-1 font-semibold px-3 font-body py-2 text-lg md:mb-10 ml-2 text-white lg:mr-0 xl:mr-20 bg-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-purple-500 hover:to-indigo-500' onClick={connectToMetaMask}
             disabled={state?.connection}>
             {!state?.connection ? <>Connect Wallet</> :
             <span className="">
                   {" "}
-                  {state?.address[0]?.substr(0, 10)}{" "}
+                  {state?.address[0]?.substr(0, 7)}...{" "}
                 </span>
             }
                 

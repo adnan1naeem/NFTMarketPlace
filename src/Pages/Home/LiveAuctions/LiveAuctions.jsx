@@ -15,7 +15,7 @@ const LiveAuctions = () => {
   return (
     <div className="flex flex-col items-center">
     <div className="" style={{maxWidth: '1700px'}}>
-      <h1 className="text-4xl text-left 2xl:text-center font-bold mt-10 sm:ml-2 2xl:ml-0">Live Auctions</h1>
+      <h1 className="text-4xl text-left 2xl:text-center font-bold mt-10 sm:ml-20 xl:ml-0">Live Auctions</h1>
       <div className="flex items-center justify-center mb-10">
       <div className="flex flex-wrap items-center justify-center">
 
