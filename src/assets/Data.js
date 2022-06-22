@@ -31,9 +31,8 @@ export const nftCollectionData = [
 export const nftAuctionData = [
   {
     id: 1,
-    nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/product/28.jpg",
-    title: "Creative Artwork",
+    nftUrl: item1,
+    title: "Creative Oilpaint",
     likes: "88",
     priceInEth: "0.008",
     priceInDoller: "26.69",
@@ -41,9 +40,8 @@ export const nftAuctionData = [
   },
   {
     id: 2,
-    nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/product/1.gif",
-    title: "Pumpkin Month",
+    nftUrl: explore2,
+    title: "Cyber Boss",
     likes: "10",
     priceInEth: "0.003",
     priceInDoller: "13.69",
@@ -51,9 +49,8 @@ export const nftAuctionData = [
   },
   {
     id: 3,
-    nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/product/2.webp",
-    title: "Pink Love",
+    nftUrl: explore3,
+    title: "Commander Titan",
     likes: "17",
     priceInEth: "0.001",
     priceInDoller: "9.24",
@@ -61,9 +58,8 @@ export const nftAuctionData = [
   },
   {
     id: 4,
-    nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/product/3.gif",
-    title: "Token Hero",
+    nftUrl: explore4,
+    title: "Creative Artwork",
     likes: "88",
     priceInEth: "0.005",
     priceInDoller: "16.69",
@@ -217,7 +213,7 @@ export const exploreCardData = [
     ],
     likes: "90",
     heading: "Creative Oilpaint #07",
-    id: "co",
+    id: 1,
   },
   {
     img: explore2,
@@ -233,8 +229,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Cyber Boss #12",
+    id: 2,
   },
   {
     img: explore3,
@@ -250,8 +246,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Commander Titan #04",
+    id: 3,
   },
   {
     img: explore4,
@@ -267,8 +263,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Creative Artwork #01",
+    id: 4,
   },
   {
     img: explore5,
@@ -284,8 +280,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Mega City Artwork",
+    id: 5,
   },
   {
     img: explore6,
@@ -301,8 +297,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Creative Artwork #04",
+    id: 6,
   },
   {
     img: explore7,
@@ -318,8 +314,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Commander Titan #05",
+    id: 7,
   },
   {
     img: explore4,
@@ -336,10 +332,10 @@ export const exploreCardData = [
     ],
     likes: "90",
     heading: "Creative Oilpaint #07",
-    id: "co",
+    id: 8,
   },
   {
-    img: explore4,
+    img: explore3,
     imgs: [
       {
         img: steven,
@@ -352,11 +348,11 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Flower Artwork #01",
+    id: 9,
   },
   {
-    img: explore4,
+    img: explore2,
     imgs: [
       {
         img: steven,
@@ -369,8 +365,8 @@ export const exploreCardData = [
       },
     ],
     likes: "90",
-    heading: "Creative Oilpaint #07",
-    id: "co",
+    heading: "Creative Mega City",
+    id: 10,
   },
 ];
 
@@ -450,3 +446,6 @@ export const exploreItemHistoryData = [
     id: "at",
   },
 ];
+
+
+

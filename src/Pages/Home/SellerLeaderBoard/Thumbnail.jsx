@@ -6,6 +6,7 @@ import { Flex, Text } from "../Blogs/Card";
 import { Stats } from "./Stats";
 import { Products } from "./Products";
 import { sellerLeaderboardData } from "assets/Data";
+import { NavLink } from "react-router-dom";
 const Root = styled(Box)(({ theme }) => ({
   margin: "10px 7%",
 }));
@@ -36,7 +37,7 @@ export const Thumbnail = () => {
   return (
     <Root>
       {sellerLeaderboardData.map((item) => (
-        <Card key={item.id}>
+        <NavLink to={`/authors/${item?.name}`}><Card key={item.id}>
           <Flex>
             <Flex
               sx={{
@@ -56,7 +57,7 @@ export const Thumbnail = () => {
           </Flex>
           <Stats />
           <Products items={item.items} />
-        </Card>
+        </Card></NavLink>
       ))}
     </Root>
   );

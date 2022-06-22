@@ -2,6 +2,7 @@ import { ExploreItem } from "Pages/EploreItem";
 import { Explore } from "Pages/Explore";
 import Home from "Pages/Home";
 import Wallet from "Pages/Wallet";
+import Authors from "Pages/Authors";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const NFTRoutes = () => {
@@ -11,7 +12,8 @@ const NFTRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/wallet" element={<Wallet />} />
-        <Route path="/exploreitem" element={<ExploreItem />} />
+        <Route path="/exploreitem/:id" element={<ExploreItem />} />
+        <Route path="/authors/:id" element={<Authors />}/>
       </Routes>
     </BrowserRouter>
   );

@@ -44,7 +44,6 @@ const Timer = (props) => {
           setSec(seconds);
           setMin(minutes);
           setHour(hoursRem);
-          console.log(hoursRem);
           setDay(days);
 
           if (distance < 0) {

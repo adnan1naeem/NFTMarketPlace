@@ -1,4 +1,5 @@
 import { Box, styled, Typography } from "@mui/material";
+import { NavLink } from "react-router-dom";
 import { MdStar } from "react-icons/md";
 import { ImHammer2 } from "react-icons/im";
 import React from "react";
@@ -12,7 +13,7 @@ const Img = styled("img")(({ theme }) => ({
     transition: "transform .5s ease",
   },
 }));
-export const Image = ({ src }) => {
+export const Image = (props) => {
   return (
     <Box
       sx={{
@@ -48,7 +49,7 @@ export const Image = ({ src }) => {
           <MdStar />
           <Typography>Featured</Typography>
         </Box>
-        <Img src={src} />
+        <Img src={props?.src} />
       </Box>
 
       <Box
@@ -60,7 +61,7 @@ export const Image = ({ src }) => {
           justifyContent: "center",
         }}
       >
-        <Box
+       <NavLink to={`/exploreitem/${props?.id}`}> <Box
           sx={{
             background: "#6366F1",
             borderRadius: "8px",
@@ -76,7 +77,7 @@ export const Image = ({ src }) => {
         >
           <ImHammer2 style={{ marginRight: 8 }} />
           <Typography>Place a bid</Typography>
-        </Box>
+        </Box></NavLink>
       </Box>
     </Box>
   );

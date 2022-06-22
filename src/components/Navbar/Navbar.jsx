@@ -77,7 +77,7 @@ const Navbar = ({ screen }) => {
       <nav
         className={` 
          px-5
-     flex items-center justify-between lg:justify-start  flex-wrap hover:bg-white py-5 md:py-2 z-40 lg:fixed text-white lg:h-20 ${
+     flex items-center justify-between lg:justify-start  flex-wrap py-5 md:py-2 z-40 lg:fixed text-white lg:h-20 ${
        scroll ? "bg-white" : "bg-transparent"
      }`}
         style={{ maxWidth: "1900px" }}
@@ -158,12 +158,12 @@ const Navbar = ({ screen }) => {
                     <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
                       <NavLink to="/explore">
                         {" "}
-                        <h1 className="pt-2">Explore v1</h1>
+                        <h1 className="pt-2">Explore</h1>
                       </NavLink>
                     </div>
                     <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                      <NavLink to="/exploreitem">
-                        <h1 className="">Item Details v1</h1>
+                      <NavLink to={`/exploreitem/${1}`}>
+                        <h1 className="">Item Details</h1>
                       </NavLink>
                     </div>
                     <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
@@ -190,7 +190,8 @@ const Navbar = ({ screen }) => {
                     </div>
                   </span>
                   <div
-                    className={`w-40 h-72 bg-white shadow shadow-xl absolute ${
+                  //h-72 is original but h-24 is temp
+                    className={`w-40 h-24 bg-white shadow shadow-xl absolute ${
                       showPageMenu ? "lg:flex lg:flex-col" : "hidden"
                     }`}
                   >
@@ -198,7 +199,8 @@ const Navbar = ({ screen }) => {
                       <h1 className="pt-2">Create Item</h1>
                     </div>
                     <div
-                      className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2"
+                    //h-10 is original but h-12 is temp
+                      className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2"
                       onMouseOver={handleSubAuthorHover}
                       onMouseOut={handleSubAuthorHover}
                     >
@@ -222,7 +224,7 @@ const Navbar = ({ screen }) => {
                         style={{ marginLeft: "152px" }}
                       >
                         <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="pt-2">Authors</h1>
+                        <NavLink to={`/authors/${'Steven'}`}> <h1 className="pt-2">Authors</h1></NavLink>
                         </div>
                         <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
                           <h1 className="">Authors Profiles</h1>
@@ -231,8 +233,15 @@ const Navbar = ({ screen }) => {
                           <h1 className="">Authors Activity</h1>
                         </div>
                       </div>
+
+                     {/* these following four closing tags are to be removed before uncomment below content */}
                     </div>
-                    <div
+                    </div>
+                </NavLink>
+                </div>
+
+
+                    {/* {/* <div
                       className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2"
                       onMouseOver={handleSubUserHover}
                       onMouseOut={handleSubUserHover}
@@ -326,9 +335,9 @@ const Navbar = ({ screen }) => {
                         style={{ width: "100%", height: "100%" }}
                       />
                     </div>
-                  </span>
+                  </span> 
                 </NavLink>
-              </div>
+              </div>*/}
               <div className="w-60 h-12 shadow bg-white shadow-lg -mt-1 lg:ml-10 hidden lg:flex items-center justify-center rounded-lg">
                 <div className="w-5 h-5">
                   <img

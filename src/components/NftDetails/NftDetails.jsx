@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { NavLink} from "react-router-dom";
 const NftDetails = (props) => {
   return (
     <div>
@@ -10,11 +11,11 @@ const NftDetails = (props) => {
                 </div>
                 <div className="flex">
                   <div className="w-10 h-10 bg-gray-400 rounded-full mt-3 ml-3">
-                  <img className="rounded-full" style={{width: '100%', height: '100%'}} src="https://html-tokenmart.netlify.app/light/assets/images/author/1.jpg" />
+                  <img className="rounded-full object-cover" style={{width: '100%', height: '100%'}} src="https://html-tokenmart.netlify.app/light/assets/images/author/1.jpg" />
                   </div>
                   
                   <div className="w-10 h-10 bg-gray-700 border border-l-2 rounded-full mt-3 -ml-5">
-                  <img className="rounded-full" style={{width: '100%', height: '100%'}} src="https://html-tokenmart.netlify.app/light/assets/images/author/3.jpg" />
+                  <img className="rounded-full object-cover" style={{width: '100%', height: '100%'}} src="https://html-tokenmart.netlify.app/light/assets/images/author/3.jpg" />
                   </div>
                 </div>
                 <div className="flex">
@@ -23,11 +24,13 @@ const NftDetails = (props) => {
                   <h1 className="ml-2 font-semibold">{props.priceInEth} ETH</h1>
                   <h1 className="ml-2">=${props.priceInDoller}</h1>
                 </div>
-                <div className="mt-20 w-1/2">
-                    <div className="w-full h-10 border-2 rounded-lg border-blue-400 bg-gradient-to-r hover:border-white hover:from-purple-500 hover:to-indigo-500 text-blue-400 hover:text-white">
+                <div className="w-3/5 flex flex-col justify-center items-center">
+                <div className="mt-20 w-4/5">
+                   <NavLink to={`/exploreitem/${props?.id}`}> <div className="w-full h-10 border-2 rounded-lg border-blue-400 bg-gradient-to-r hover:border-white hover:from-purple-500 hover:to-indigo-500 text-blue-400 hover:text-white">
                     <h1 className="" style={{marginTop: '4px'}}>Place a bid</h1>
-                    </div>
+                    </div></NavLink>
                     <h1 className="text-xs">{props.bids} bids total</h1>
+                </div>
                 </div>
                 </div>
                </div>

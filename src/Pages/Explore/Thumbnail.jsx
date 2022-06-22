@@ -13,9 +13,11 @@ const Root = styled(Box)(({ theme }) => ({
   overflow: "hidden",
   transition: "0.25s ease-in-out background",
   margin: "1.5%",
+  border: "2px solid white",
   "&:hover": {
-    backgroundColor: "#b5cef5",
+    backgroundColor: "#d9f5fa",
     cursor: "pointer",
+    border: "2px solid #9448f7"
   },
   [theme.breakpoints.only("xs")]: {
     width: "300px",
@@ -34,7 +36,7 @@ export const Thumbnail = ({ data }) => {
     >
       {data.map((item) => (
         <Root>
-          <Image src={item.img} />
+          <Image src={item.img} id={item.id}/>
           <Likes data={item.imgs} likes={item.likes} />
           <Box
             sx={{

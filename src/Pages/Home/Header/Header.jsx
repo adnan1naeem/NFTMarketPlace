@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 const Header = () => {
 
   return (
@@ -13,11 +14,11 @@ const Header = () => {
        <h1 className="text-xl lg:text-5xl font-semibold px-20 lg:px-40  xl:px-60 lg:pt-20 pt-10 lg:pt-40 leading-10">Largest online marketplace to buy sell NFT items</h1>
        <h1 className="text-base lg:text-xl px-20 lg:px-40 xl:px-60 mt-7 lg:mt-12">Join the world's biggest NFT marketplace and discover truely rare digital artwork, sound, videos etc</h1>
        <div className="mt-10 lg:mt-20 pb-10 lg:pb-20 flex flex-col md:flex-row items-center w-full justify-center">
-       <button
+      <NavLink to="/explore"> <button
               className='rounded-lg h-14 w-44 font-semibold px-5 font-body py-2 text-lg md:mb-10 text-white md:mr-5 bg-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-purple-500 hover:to-indigo-500'
             >
               Explore Now
-            </button>
+            </button></NavLink>
             <button
               className='rounded-lg h-14 w-44 mt-2 md:mt-0 font-semibold px-5 font-body py-2 text-lg md:mb-10 md:ml-2 text-white bg-black  hover:bg-indigo-500'
             >

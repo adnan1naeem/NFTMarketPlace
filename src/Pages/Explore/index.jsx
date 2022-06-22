@@ -2,7 +2,7 @@ import { styled, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { exploreCardData } from "assets/Data";
 import LoadingButton from "components/UI/LoadingButton";
-import React from "react";
+import React,{useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import { Buttons } from "./Button";
 import { Thumbnail } from "./Thumbnail";
@@ -23,6 +23,9 @@ const Text = styled(Typography)(({ theme }) => ({
 }));
 export const Explore = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div style={{ marginBottom: "1rem" }}>
       <Navbar />
