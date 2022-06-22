@@ -2,7 +2,7 @@ import { Box, styled, Typography } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import { MdStar } from "react-icons/md";
 import { ImHammer2 } from "react-icons/im";
-import { useNavigate } from "react-router-dom";
+
 import React from "react";
 const Img = styled("img")(({ theme }) => ({
   borderRadius: 8,
@@ -15,7 +15,6 @@ const Img = styled("img")(({ theme }) => ({
   },
 }));
 export const Image = (props) => {
-  const navigate= useNavigate();
   return (
     <Box
       sx={{
@@ -76,7 +75,7 @@ export const Image = (props) => {
             marginTop: -3,
             zIndex: "5",
           }}
-          onClick={() => navigate("/exploreitem")}
+          
         >
           <ImHammer2 style={{ marginRight: 8 }} />
           <Typography>Place a bid</Typography>
