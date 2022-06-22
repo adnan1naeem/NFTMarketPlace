@@ -37,7 +37,7 @@ export const Thumbnail = ({ data }) => {
       {data.map((item) => (
         <Root>
           <Image src={item.img} id={item.id}/>
-          <Likes data={item.imgs} likes={item.likes} />
+          <Likes data={item.imgs} likes={item.likes} id={item.id}/>
           <Box
             sx={{
               width: "100%",

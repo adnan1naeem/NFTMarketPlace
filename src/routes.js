@@ -1,3 +1,4 @@
+import { CreateItem } from "Pages/Create Item";
 import { ExploreItem } from "Pages/EploreItem";
 import { Explore } from "Pages/Explore";
 import Home from "Pages/Home";
@@ -14,6 +15,7 @@ const NFTRoutes = () => {
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/exploreitem/:id" element={<ExploreItem />} />
         <Route path="/authors/:id" element={<Authors />}/>
+        <Route path="/createitem" element={<CreateItem />} />
       </Routes>
     </BrowserRouter>
   );

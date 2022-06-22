@@ -1,4 +1,5 @@
 import { Box, styled, Typography } from "@mui/material";
+import BidModal from "components/Model/BidModal";
 import React from "react";
 import { ImHammer2 } from "react-icons/im";
 import ethIcon from "../../assets/Images/cryptocurrency-icon.svg";
@@ -34,7 +35,7 @@ export const Price = () => {
           ≈$26.69
         </Text>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           background: "#6366F1",
           borderRadius: "8px",
@@ -51,7 +52,8 @@ export const Price = () => {
       >
         <ImHammer2 style={{ marginRight: 8 }} />
         <Typography sx={{ fontSize: "1.25rem" }}>Place a bid</Typography>
-      </Box>
+      </Box> */}
+      <BidModal />
     </Box>
   );
 };

@@ -6,8 +6,8 @@ import arrow from "../../assets/Images/explore/right-arrow.svg";
 const Heading = styled(Typography)(({ theme }) => ({
   fontFamily: "Nunito",
   color: "#0F172A",
-  fontWeight: 700,
   fontSize: "60px",
+  fontWeight: 700,
   [theme.breakpoints.only("xs")]: {
     fontSize: "45px",
   },
@@ -21,23 +21,20 @@ const Text = styled(Typography)(({ theme }) => ({
   },
 }));
 
-export const Header = () => {
+export const CreateItemHeader = () => {
   const navigate = useNavigate();
   return (
     <>
       <Box sx={{ display: "flex", margin: "20px 0%" }}>
-        <Heading>Explore Item</Heading>
+        <Heading>Create Item</Heading>
       </Box>
       <Box sx={{ display: "flex", margin: "3% 0%", alignItems: "center" }}>
         <Text onClick={() => navigate("/")}>Home</Text>
         <img src={arrow} alt="" style={{ margin: "0px 5px" }} />
         <Text onClick={() => navigate("/explore")}>Explore</Text>
         <img src={arrow} alt="" style={{ margin: "0px 5px" }} />
-        <Text
-          sx={{ color: "#327bf0" }}
-          onClick={() => navigate("/exploreitem")}
-        >
-          Item
+        <Text sx={{ color: "#327bf0" }} onClick={() => navigate("/createitem")}>
+          Create Item
         </Text>
       </Box>
     </>

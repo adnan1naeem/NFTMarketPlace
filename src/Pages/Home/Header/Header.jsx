@@ -19,11 +19,11 @@ const Header = () => {
             >
               Explore Now
             </button></NavLink>
-            <button
+            <NavLink to="/createitem">  <button
               className='rounded-lg h-14 w-44 mt-2 md:mt-0 font-semibold px-5 font-body py-2 text-lg md:mb-10 md:ml-2 text-white bg-black  hover:bg-indigo-500'
             >
               Create Product
-            </button>
+            </button></NavLink>
        </div>
        </div>
     </div>
