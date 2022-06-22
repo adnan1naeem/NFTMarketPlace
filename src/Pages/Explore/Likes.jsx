@@ -15,12 +15,12 @@ const Image = styled("img")(({ theme }) => ({
   marginLeft: -7,
   border: "1px solid white",
 }));
-export const Likes = ({ data, likes }) => {
+export const Likes = ({ data, likes, id }) => {
   return (
-    <Root>
+    <Root ke={id}>
       <Box sx={{ display: "flex" }}>
         {data.map((item) => (
-          <Image src={item.img} />
+          <Image src={item.img} key={item.id} />
         ))}
       </Box>
       <Box sx={{ display: "flex" }}>

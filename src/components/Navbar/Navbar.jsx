@@ -17,7 +17,6 @@ const Navbar = ({ screen }) => {
   const [showSubAuthorMenu, setShowSubAuthorMenu] = useState(false);
   const [showSubUserMenu, setShowSubUserMenu] = useState(false);
   const [showSubBlogMenu, setShowSubBlogMenu] = useState(false);
-  const navigate = useNavigate();
   const [scroll, setScroll] = useState(false);
   const openMobileNav = () => {
     setHidden(!hidden);
@@ -167,7 +166,10 @@ const Navbar = ({ screen }) => {
                       </NavLink>
                     </div>
                     <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                    <NavLink to="/wallet"> <h1 className="">Wallet</h1></NavLink>
+                      <NavLink to="/wallet">
+                        {" "}
+                        <h1 className="">Wallet</h1>
+                      </NavLink>
                     </div>
                   </div>
                 </NavLink>
@@ -195,7 +197,9 @@ const Navbar = ({ screen }) => {
                     }`}
                   >
                     <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
-                      <h1 className="pt-2">Create Item</h1>
+                      <NavLink to="/createitem">
+                        <h1 className="pt-2">Create Item</h1>
+                      </NavLink>
                     </div>
                     <div
                       className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2"
