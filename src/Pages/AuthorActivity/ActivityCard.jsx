@@ -3,7 +3,7 @@ import './activityCard.css'
 const ActivityCard = (props) => {
   return (
     <div
-      className={`flex w-2/3 rounded-lg items-center mt-10 transition ease-in-out delay-150 hover:shadow hover:shadow-lg ${props.color}`}
+      className={`flex w-4/5 sm:w-2/3 rounded-lg items-center mt-10 transition ease-in-out delay-150 hover:shadow hover:shadow-lg ${props.color}`}
     >
       <div className={`w-28 h-28 m-5 rounded-lg flex items-center`}>
         <img
@@ -13,7 +13,7 @@ const ActivityCard = (props) => {
         />
       </div>
       <div
-        className={`w-7 h-7 rounded-full absolute items-center flex justify-center ml-28 -mt-12 ${props.iconBg}`}
+        className={`w-7 h-7 rounded-full hidden md:flex absolute items-center flex justify-center ml-28 -mt-12 ${props.iconBg}`}
       >
         <img
           className=' rounded-full'
