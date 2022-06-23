@@ -1,12 +1,6 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
-import {
-  Box,
-  Button,
-  Checkbox,
-  FormControlLabel,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 import { useNavigate } from "react-router-dom";
@@ -14,7 +8,6 @@ import { styled } from "@mui/material/styles";
 import Error from "components/UI/Error";
 import FormField from "components/UI/FormikField";
 import { Flex } from "components/UI/Flex";
-import { ManropeText } from "components/UI/ManropeText";
 const Label = styled(Typography)(({ theme }) => ({
   fontFamily: "Manrope",
   fontSize: 16,

@@ -6,7 +6,7 @@ import LoginForm from "./ForgotPasswordForm";
 const Heading = styled(Typography)(({ theme }) => ({
   fontFamily: "Nunito",
   color: "#0F172A",
-  fontSize: "60px",
+  fontSize: "50px",
   fontWeight: 700,
   [theme.breakpoints.only("xs")]: {
     fontSize: "40px",

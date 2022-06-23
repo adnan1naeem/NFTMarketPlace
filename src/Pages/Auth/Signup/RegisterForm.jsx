@@ -85,7 +85,7 @@ function RegisterForm({ onSubmit }) {
             {...nameProps}
           />
           {formik.touched.email && formik.errors.email ? (
-            <Error message={formik.errors.email} />
+            <Error message={formik.errors.firstName} />
           ) : null}
         </Flex>
         <Flex
@@ -104,7 +104,7 @@ function RegisterForm({ onSubmit }) {
             {...lastNameProps}
           />
           {formik.touched.email && formik.errors.email ? (
-            <Error message={formik.errors.email} />
+            <Error message={formik.errors.lastName} />
           ) : null}
         </Flex>
         <Flex
