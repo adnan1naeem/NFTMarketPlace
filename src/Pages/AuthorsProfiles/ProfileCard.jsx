@@ -47,7 +47,9 @@ const ProfileCard = (props) => {
           <span className='flex pt-1 ml-1'>
             <div className='w-3 h-3'>
               <img
-                src='https://html-tokenmart.netlify.app/light/assets/images/up-icon.svg'
+                src={`https://html-tokenmart.netlify.app/light/assets/images/${
+                  props.up ? 'up' : 'down'
+                }-icon.svg`}
                 style={{ width: '100%', height: '100%' }}
               />
             </div>

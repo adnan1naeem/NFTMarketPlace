@@ -81,11 +81,14 @@ const Navbar = ({ screen }) => {
      }`}
         style={{ maxWidth: '1900px' }}
       >
+        {' '}
         <div className='flex flex-shrink-0 w-32 sm:w-48 lg:-mt-20 lg:-ml-2 xl:ml-16'>
-          <img
-            src='https://d33wubrfki0l68.cloudfront.net/0fcd3a5de968db4747c50586a61bcc126b4890fd/3ca91/assets/images/header-logo.svg'
-            alt='website logo'
-          />
+          <NavLink to='/'>
+            <img
+              src='https://d33wubrfki0l68.cloudfront.net/0fcd3a5de968db4747c50586a61bcc126b4890fd/3ca91/assets/images/header-logo.svg'
+              alt='website logo'
+            />
+          </NavLink>
         </div>
         <div className='z-20 block lg:hidden' onClick={openMobileNav}>
           <button className='flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400   hover:border-white '>
@@ -240,7 +243,10 @@ const Navbar = ({ screen }) => {
                           </NavLink>
                         </div>
                         <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                          <h1 className=''>Authors Activity</h1>
+                          <NavLink to={`/authoractivity/${1}`}>
+                            {' '}
+                            <h1 className=''>Authors Activity</h1>
+                          </NavLink>
                         </div>
                       </div>
                     </div>

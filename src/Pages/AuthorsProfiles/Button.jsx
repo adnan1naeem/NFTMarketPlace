@@ -54,7 +54,9 @@ export const Buttons = () => {
         <Button>Published (10)</Button>
       </NavLink>
       <Button>Pending (12)</Button>
-      <Button>Activity</Button>
+      <NavLink to={`/authoractivity/${id}`}>
+        <Button>Activity</Button>
+      </NavLink>
       <ActiveButton>Followers (6)</ActiveButton>
       <Button>Edit Profile</Button>
       <Button>Logout</Button>
