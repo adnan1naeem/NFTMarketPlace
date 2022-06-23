@@ -55,6 +55,9 @@ const CustomButton = styled(Button)(({ theme }) => ({
   padding: "10px",
   fontFamily: "Nunito",
   marginTop: "2rem",
+  "&:hover": {
+    background: "#699dff",
+  },
 }));
 export const NewItemDetails = ({ setUrl }) => {
   return (
