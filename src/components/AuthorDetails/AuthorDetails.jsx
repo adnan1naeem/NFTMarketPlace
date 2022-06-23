@@ -1,16 +1,21 @@
 import React,{useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { sellerLeaderboardData } from "assets/Data";
+import { AuthorsData } from 'assets/Data';
 const AuthorDetails = () => {
   const [name, setName] = useState();
   const [pic, setPic] = useState();
+  const [level, setLevel] = useState();
+  const [items, setItems] = useState();
   const { id } = useParams();
   console.log('id is ', id);
   const findAuthorDetails = () => {
-    for(let i=0; i<sellerLeaderboardData.length; i++){
-      if(sellerLeaderboardData[i]?.name === id){
-        setName(sellerLeaderboardData[i].name);
-        setPic(sellerLeaderboardData[i].pic)
+    for(let i=0; i<AuthorsData.length; i++){
+      if(AuthorsData[i]?.id == id){
+        setName(AuthorsData[i].name);
+        setPic(AuthorsData[i].img);
+        setLevel(AuthorsData[i].level);
+        setItems(AuthorsData[i].items);
       }
     }
   }
@@ -21,7 +26,7 @@ const AuthorDetails = () => {
     <div className="mt-20 md:mt-40">
     <div className="flex flex-col justify-center items-center">
         <div className="w-36 h-36 rounded-full bg-gray-300">
-          <img className="rounded-full object-cover" style={{width: '100%', height: '100%'}} src={pic}/>
+          <img className="rounded-full object-cover" style={{width: '100%', height: '100%'}} src={pic} />
         </div>
         <div className="w-7 h-7 rounded-full absolute ml-28 mt-20">
             <img className="rounded-full object-cover" style={{width: '100%', height: '100%'}}  src="https://html-tokenmart.netlify.app/light/assets/images/verified-icon.svg"/>
@@ -38,13 +43,13 @@ const AuthorDetails = () => {
     </div>
     <div className="flex justify-center">
     <div className="flex justify-center">
-    <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/level-icon.svg"/></span><span className='mt-5 ml-2 font-semibold'>Level 8s</span>
+    <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/level-icon.svg"/></span><span className='mt-5 ml-2 font-semibold'>Level {level}s</span>
     </div>
     <div className="flex justify-center">
     <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 ml-7 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/heart-icon2.svg"/></span><span className='mt-5 ml-2 font-semibold'>90 Likes</span>
     </div>
     <div className="flex justify-center">
-    <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 ml-7 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/item-icon.svg"/></span><span className='mt-5 ml-2 font-semibold'>150 Items</span>
+    <span className="w-7 h-7 bg-blue-100 rounded-full mt-5 ml-7 flex items-center justify-center"><img className="" src="https://html-tokenmart.netlify.app/light/assets/images/item-icon.svg"/></span><span className='mt-5 ml-2 font-semibold'>{items} Items</span>
     </div>
     </div>
 
