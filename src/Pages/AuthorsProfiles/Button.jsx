@@ -1,7 +1,7 @@
 import { Box, styled } from '@mui/material'
-import { useParams } from 'react-router-dom'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 const ActiveButton = styled('button')(({ theme }) => ({
   background: '#6366F1',
   fontFamily: 'Manrope',
@@ -46,13 +46,16 @@ export const Buttons = () => {
   const { id } = useParams()
   return (
     <Box>
-      <ActiveButton>Featured (4)</ActiveButton>
-      <Button>Published (10)</Button>
+      <NavLink to={`/authors/${id}`}>
+        <Button>Featured (4)</Button>
+      </NavLink>
+      <NavLink to={`/authors/${id}`}>
+        {' '}
+        <Button>Published (10)</Button>
+      </NavLink>
       <Button>Pending (12)</Button>
       <Button>Activity</Button>
-      <NavLink to={`/authorsprofiles/${id}`}>
-        <Button>Followers (6)</Button>
-      </NavLink>
+      <ActiveButton>Followers (6)</ActiveButton>
       <Button>Edit Profile</Button>
       <Button>Logout</Button>
     </Box>

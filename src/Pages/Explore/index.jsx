@@ -2,7 +2,7 @@ import { styled, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { exploreCardData } from "assets/Data";
 import LoadingButton from "components/UI/LoadingButton";
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Buttons } from "./Button";
 import { Thumbnail } from "./Thumbnail";
@@ -40,7 +40,7 @@ export const Explore = () => {
       </Box>
       <Buttons />
       <Thumbnail data={exploreCardData} />
-      <LoadingButton />
+      {/* <LoadingButton /> */}
     </div>
   );
 };

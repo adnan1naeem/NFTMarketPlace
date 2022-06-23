@@ -37,7 +37,7 @@ export const Thumbnail = () => {
   return (
     <Root>
       {sellerLeaderboardData.map((item) => (
-        <NavLink to={`/authors/${item?.name}`}><Card key={item.id}>
+        <NavLink to={`/authors/${item?.id}`}><Card key={item.id}>
           <Flex>
             <Flex
               sx={{

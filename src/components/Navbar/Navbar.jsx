@@ -192,8 +192,8 @@ const Navbar = ({ screen }) => {
                     </div>
                   </span>
                   <div
-                  //h-72 is original but h-24 is temp
-                    className={`w-40 h-24 bg-white shadow shadow-xl absolute ${
+                    //h-72 is original but h-24 is temp
+                    className={`w-40 h-36 bg-white shadow shadow-xl absolute ${
                       showPageMenu ? "lg:flex lg:flex-col" : "hidden"
                     }`}
                   >
@@ -203,7 +203,7 @@ const Navbar = ({ screen }) => {
                       </NavLink>
                     </div>
                     <div
-                    //h-10 is original but h-12 is temp
+                      //h-10 is original but h-12 is temp
                       className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2"
                       onMouseOver={handleSubAuthorHover}
                       onMouseOut={handleSubAuthorHover}
@@ -228,24 +228,24 @@ const Navbar = ({ screen }) => {
                         style={{ marginLeft: "152px" }}
                       >
                         <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
-                        <NavLink to={`/authors/${'Steven'}`}> <h1 className="pt-2">Authors</h1></NavLink>
+                          <NavLink to={`/authors/${1}`}>
+                            {" "}
+                            <h1 className="pt-2">Authors</h1>
+                          </NavLink>
                         </div>
                         <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="">Authors Profiles</h1>
+                          <NavLink to={`/authorsprofiles/${1}`}>
+                            {" "}
+                            <h1 className="">Authors Profiles</h1>
+                          </NavLink>
                         </div>
                         <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
                           <h1 className="">Authors Activity</h1>
                         </div>
                       </div>
-
-                     {/* these following four closing tags are to be removed before uncomment below content */}
                     </div>
-                    </div>
-                </NavLink>
-                </div>
 
-
-                    {/* {/* <div
+                    <div
                       className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2"
                       onMouseOver={handleSubUserHover}
                       onMouseOut={handleSubUserHover}
@@ -267,16 +267,29 @@ const Navbar = ({ screen }) => {
                         style={{ marginLeft: "152px" }}
                       >
                         <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="pt-2">Login</h1>
+                          <NavLink to="/login">
+                            <h1 className="pt-2">Login</h1>
+                          </NavLink>
                         </div>
                         <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="">Register</h1>
+                          <NavLink to="/register">
+                            <h1 className="">Register</h1>
+                          </NavLink>
                         </div>
                         <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="">Forget Password</h1>
+                          <NavLink to="/forgotpassword">
+                            <h1 className="">Forget Password</h1>
+                          </NavLink>
                         </div>
                       </div>
                     </div>
+
+                    {/* these following four closing tags are to be removed before uncomment below content */}
+                  </div>
+                </NavLink>
+              </div>
+
+              {/* {/*
                     <div
                       className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2"
                       onMouseOver={handleSubBlogHover}

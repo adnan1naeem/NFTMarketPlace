@@ -17,10 +17,12 @@ const CustomButton = styled(Button)(({ theme }) => ({
   fontWeight: 600,
   padding: "10px",
   fontFamily: "Nunito",
+  "&:hover": {
+    background: "#699dff",
+  },
 }));
 export default function ImageInput({ setUrl }) {
   const handleFiles = (files) => {
-    console.log(files);
     setUrl(files.base64);
   };
 

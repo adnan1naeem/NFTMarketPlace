@@ -304,9 +304,9 @@ export const blogsData = [
 ];
 export const sellerLeaderboardData = [
   {
-    pic: steven,
-    name: "Steven",
-    id: "st",
+    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg",
+    name: "Leslie Alexander",
+    id: 1,
     items: {
       item1: item1,
       item2: item2,
@@ -316,9 +316,9 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: leah,
-    name: "Leah",
-    id: "le",
+    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg",
+    name: "Floyd Miles",
+    id: 2,
     items: {
       item1: item1,
       item2: item2,
@@ -328,9 +328,9 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: joana,
-    name: "Joana",
-    id: "jo",
+    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg",
+    name: "Ronald Richards",
+    id: 3,
     items: {
       item1: item1,
       item2: item2,
@@ -340,9 +340,9 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: melanie,
-    name: "Melanie",
-    id: "me",
+    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg",
+    name: "Dianne Russell",
+    id: 4,
     items: {
       item1: item1,
       item2: item2,
@@ -352,9 +352,9 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: trinity,
-    name: "Trinity",
-    id: "tr",
+    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg",
+    name: "Darrell Steward",
+    id: 5,
     items: {
       item1: item1,
       item2: item2,
@@ -362,7 +362,8 @@ export const sellerLeaderboardData = [
       item4: item4,
       item5: item5,
     },
-  },
+  }
+  
 ];
 export const navigationData = [
   { text: "Home", id: "ho" },
@@ -638,5 +639,127 @@ export const exploreItemHistoryData = [
   },
 ];
 
+export const AuthorsData = [
+  {
+    id: 1,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg",
+    name: "Leslie Alexander",
+    level: 8,
+    items: 17,
+    up: true
+  },
+  {
+    id: 2,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg",
+    name: "Floyd Miles",
+    level: 4,
+    items: 15,
+    up: true
+  },
+  {
+    id: 3,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg",
+    name: "Ronald Richards",
+    level: 7,
+    items: 2,
+    up: false
+  },
+  {
+    id: 4,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg",
+    name: "Dianne Russell",
+    level: 8,
+    items: 14,
+    up: true
+  },
+  {
+    id: 5,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg",
+    name: "Darrell Steward",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 6,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/14.jpg",
+    name: "Marvin McKinney",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 7,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/15.jpg",
+    name: "Jerome Bell",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 8,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/16.jpg",
+    name: "Courtney Henry",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 9,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/17.jpg",
+    name: "Theresa Webb",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 10,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/18.jpg",
+    name: "Kathryn Murphy",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 11,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/19.jpg",
+    name: "Arlene McCoy",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 12,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/20.jpg",
+    name: "Eleanor Pena",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 13,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/21.jpg",
+    name: "Jane Cooper",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 14,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/22.jpg",
+    name: "Wade Warren",
+    level: 2,
+    items: 23,
+    up: true
+  },
+  {
+    id: 15,
+    img: "https://html-tokenmart.netlify.app/light/assets/images/author/5.jpg",
+    name: "Jenny Wilson",
+    level: 2,
+    items: 23,
+    up: true
+  },
+]
 
 
