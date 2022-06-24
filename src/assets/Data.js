@@ -872,3 +872,29 @@ export const AuthorActivityData = [
     iconBg: 'bg-blue-200',
   },
 ]
+export const AuthorsDataOnLoading = [
+  {
+    id: 1,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg',
+    name: 'Leslie Alexander',
+    level: 8,
+    items: 17,
+    up: true,
+  },
+  {
+    id: 2,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg',
+    name: 'Floyd Miles',
+    level: 4,
+    items: 15,
+    up: true,
+  },
+  {
+    id: 3,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg',
+    name: 'Ronald Richards',
+    level: 7,
+    items: 2,
+    up: false,
+  },
+]

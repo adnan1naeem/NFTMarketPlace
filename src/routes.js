@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { LoginPage } from 'Pages/Auth/Login/LoginPage'
 import { ForgotPasswordPage } from 'Pages/Auth/ForgotPassword/ForgotPasswordPage'
 import { RegisterPage } from 'Pages/Auth/Signup/RegisterPage'
+import BlogDetails from 'Pages/Blogs/BlogDetails'
 
 const NFTRoutes = () => {
   return (
@@ -26,6 +27,7 @@ const NFTRoutes = () => {
         <Route path='/authoractivity/:id' element={<AuthorActivity />} />
         <Route path='/authorsprofiles/:id' element={<AuthorsProfiles />} />
         <Route path='/createitem' element={<CreateItem />} />
+        <Route path='/blogdetails' element={<BlogDetails />} />
       </Routes>
     </BrowserRouter>
   )

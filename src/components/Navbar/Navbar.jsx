@@ -312,7 +312,10 @@ const Navbar = ({ screen }) => {
                         style={{ marginLeft: '152px' }}
                       >
                         <div className='w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                          <h1 className='pt-2'>Blog Details</h1>
+                          <NavLink to='/blogdetails'>
+                            {' '}
+                            <h1 className='pt-2'>Blog Details</h1>{' '}
+                          </NavLink>
                         </div>
                         <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
                           <h1 className=''>Category</h1>
