@@ -34,6 +34,18 @@ const NFTRoutes = () => {
         <Route path="/tag" element={<Tag />} />
         <Route path="/bloggrid" element={<BlogGrid />} />
         <Route path="/blogdetails" element={<BlogDetails />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/forgotpassword" element={<ForgotPasswordPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/wallet" element={<Wallet />} />
+        <Route path="/exploreitem/:id" element={<ExploreItem />} />
+        <Route path="/authors/:id" element={<Authors />} />
+        <Route path="/authoractivity/:id" element={<AuthorActivity />} />
+        <Route path="/authorsprofiles/:id" element={<AuthorsProfiles />} />
+        <Route path="/createitem" element={<CreateItem />} />
+        <Route path="/blogdetails" element={<BlogDetails />} />
       </Routes>
     </BrowserRouter>
   );

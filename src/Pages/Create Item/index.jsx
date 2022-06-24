@@ -1,25 +1,25 @@
-import { Grid } from "@mui/material";
-import React, { useState } from "react";
-import { NewItemDetails } from "./Details";
-import { CreateItemHeader } from "./Header";
-import defaultimg from "../../assets/Images/CreateItem/defaultimg.jpg";
-import { Box } from "@mui/system";
-import { Flex } from "components/UI/Flex";
-import { NunitoText } from "components/UI/NunitoText";
-import Navbar from "components/Navbar/Navbar";
+import { Grid } from '@mui/material'
+import React, { useState } from 'react'
+import { NewItemDetails } from './Details'
+import { CreateItemHeader } from './Header'
+import defaultimg from '../../assets/Images/CreateItem/defaultimg.jpg'
+import { Box } from '@mui/system'
+import { Flex } from 'components/UI/Flex'
+import { NunitoText } from 'components/UI/NunitoText'
+import Navbar from 'components/Navbar/Navbar'
 export const CreateItem = () => {
-  const [url, setUrl] = useState(defaultimg);
+  const [url, setUrl] = useState(defaultimg)
 
   return (
     <>
       <Navbar />
       <Flex
         sx={{
-          margin: "7% 5%",
-          flexDirection: "column",
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          marginBottom: "5rem",
+          margin: '7% 5%',
+          flexDirection: 'column',
+          justifyContent: 'flex-start',
+          alignItems: 'flex-start',
+          marginBottom: '5rem',
         }}
       >
         <CreateItemHeader />
@@ -31,19 +31,19 @@ export const CreateItem = () => {
             <Box
               sx={{
                 height: 400,
-                width: "100%",
+                width: '100%',
               }}
             >
-              <NunitoText sx={{ marginBottom: "1rem", fontWeight: 700 }}>
-                Preview
-              </NunitoText>
+              <NunitoText
+                sx={{ marginBottom: '1rem', fontWeight: 700 }}
+              ></NunitoText>
               <img
                 src={url}
-                alt=""
+                alt=''
                 style={{
-                  objectFit: "cover",
-                  borderRadius: "8px",
-                  height: "100%",
+                  objectFit: 'cover',
+                  borderRadius: '8px',
+                  height: '100%',
                 }}
               />
             </Box>
@@ -51,5 +51,5 @@ export const CreateItem = () => {
         </Grid>
       </Flex>
     </>
-  );
-};
+  )
+}

@@ -2,7 +2,6 @@ import AuthorDetails from "components/AuthorDetails/AuthorDetails";
 import Navbar from "components/Navbar/Navbar";
 import React, { useEffect } from "react";
 import { Buttons } from "./Button";
-import LoadingButton from "components/UI/LoadingButton";
 import "./activityCard.css";
 import ActivityCard from "./ActivityCard";
 import { AuthorActivityData } from "assets/Data";
@@ -34,7 +33,6 @@ const AuthorActivity = () => {
             );
           })}
         </div>
-        <LoadingButton />
       </div>
     </div>
   );

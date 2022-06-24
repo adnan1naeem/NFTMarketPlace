@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { images } from "assets/Images";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -9,7 +9,7 @@ import {
 const Navbar = ({ screen }) => {
   // const {props:any}= props`
   const dispatch = useDispatch();
-
+  const location = useLocation();
   const state = useSelector((state) => state);
   const [hidden, setHidden] = useState(true);
   const [showExploreMenu, setShowExploreMenu] = useState(false);
@@ -130,7 +130,6 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: "100%", height: "100%" }}
-                        alt=""
                       />
                     </div>
                   </span>
@@ -150,7 +149,6 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: "100%", height: "100%" }}
-                        alt=""
                       />
                     </div>
                   </span>
@@ -193,7 +191,6 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: "100%", height: "100%" }}
-                        alt=""
                       />
                     </div>
                   </span>
@@ -220,12 +217,10 @@ const Navbar = ({ screen }) => {
                         <div
                           className="w-3 h-3 mt-2"
                           style={{ marginLeft: "72px" }}
-                          alt=""
                         >
                           <img
                             src={images.rightArrow}
                             style={{ width: "100%", height: "100%" }}
-                            alt=""
                           />
                         </div>
                       </span>
@@ -268,7 +263,6 @@ const Navbar = ({ screen }) => {
                           <img
                             src={images.rightArrow}
                             style={{ width: "100%", height: "100%" }}
-                            alt=""
                           />
                         </div>
                       </span>
@@ -308,7 +302,6 @@ const Navbar = ({ screen }) => {
                           <img
                             src={images.rightArrow}
                             style={{ width: "100%", height: "100%" }}
-                            alt=""
                           />
                         </div>
                       </span>
@@ -319,7 +312,9 @@ const Navbar = ({ screen }) => {
                         style={{ marginLeft: "152px" }}
                       >
                         <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="pt-2">Blog Details</h1>
+                          <NavLink to="/blogdetails">
+                            <h1 className="pt-2">Blog Details</h1>{" "}
+                          </NavLink>
                         </div>
                         <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
                           <NavLink to="/category">
@@ -381,7 +376,6 @@ const Navbar = ({ screen }) => {
                   <img
                     src={images.search}
                     style={{ width: "100%", height: "100%" }}
-                    alt=""
                   />
                 </div>
                 <div>

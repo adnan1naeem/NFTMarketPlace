@@ -1,0 +1,7 @@
+.social {
+  color: blue;
+  font-size: 20px;
+}
+.social:hover {
+  color: white;
+}
