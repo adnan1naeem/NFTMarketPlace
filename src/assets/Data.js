@@ -898,3 +898,89 @@ export const AuthorsDataOnLoading = [
     up: false,
   },
 ]
+
+export const blogCategories = [
+  {
+    id: 1,
+    title: 'Creator',
+    items: 24,
+  },
+  {
+    id: 2,
+    title: 'Auction',
+    items: 20,
+  },
+  {
+    id: 3,
+    title: 'Marketplace',
+    items: 17,
+  },
+  {
+    id: 4,
+    title: 'Sports',
+    items: 13,
+  },
+  {
+    id: 5,
+    title: 'Outing',
+    items: 11,
+  },
+]
+export const blogTags = [
+  {
+    id: 1,
+    title: 'Paid Marketing',
+  },
+  {
+    id: 2,
+    title: 'Digital Marketing',
+  },
+  {
+    id: 3,
+    title: 'Blues',
+  },
+  {
+    id: 4,
+    title: 'COVID',
+  },
+  {
+    id: 5,
+    title: 'Web Design',
+  },
+  {
+    id: 6,
+    title: 'Content Marketing',
+  },
+]
+export const blogPopularPosts = [
+  {
+    id: 1,
+    title: 'Save Thousands Of Lives com This NFT',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/14.jpg',
+  },
+  {
+    id: 2,
+    title: 'Honoring Black History Month with Toddlers',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/15.jpg',
+  },
+  {
+    id: 3,
+    title: 'NFT Market – A Compact Trike with the Big Benefits',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/16.jpg',
+  },
+  {
+    id: 4,
+    title: 'Clever Ways to Purchase Extr s from NFT Market',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/17.jpg',
+  },
+  {
+    id: 5,
+    title: 'The Revolutionary Functionali Seat & Stroller',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/18.jpg',
+  },
+]
