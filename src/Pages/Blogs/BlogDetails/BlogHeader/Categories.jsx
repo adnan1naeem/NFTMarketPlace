@@ -8,7 +8,7 @@ const Categories = () => {
       </h1>
       {blogCategories.map((i) => {
         return (
-          <div className='w-60 h-12 shadow bg-white hover:shadow-lg my-5 lg:ml-10 lg:flex items-center justify-between px-5 text-gray-600 rounded-lg border border-2 border-gray-400 hover:bg-indigo-500 hover:text-white cursor-pointer'>
+          <div className='w-4/5 h-12 shadow bg-white hover:shadow-lg my-5 lg:ml-10 lg:flex items-center justify-between px-5 text-gray-600 rounded-lg border border-2 border-gray-400 hover:bg-indigo-500 hover:text-white cursor-pointer'>
             <h1>{i.title}</h1>
             <h1>{i.items}</h1>
           </div>

@@ -4,11 +4,13 @@ import { Header } from './Header/Header'
 import BlogHeader from './BlogHeader/BlogHeader'
 const BlogDetails = () => {
   return (
-    <div className='mb-32'>
-      <Navbar />
-      <div className='mt-32 mx-10'>
-        <Header />
-        <BlogHeader />
+    <div className='flex items-center flex-col'>
+      <div className='mb-32' style={{ maxWidth: '1900px' }}>
+        <Navbar />
+        <div className='mt-32 mx-10'>
+          <Header />
+          <BlogHeader />
+        </div>
       </div>
     </div>
   )
