@@ -24,7 +24,7 @@ const Text = styled(Typography)(({ theme }) => ({
 export const Header = () => {
   const navigate = useNavigate()
   return (
-    <>
+    <div className='mt-32'>
       <Box sx={{ display: 'flex', margin: '20px 0%' }}>
         <Heading>NFT Market – Big Benefits of Selling</Heading>
       </Box>
@@ -37,6 +37,6 @@ export const Header = () => {
           NFT Market – Big Benefits of Selling
         </Text>
       </Box>
-    </>
+    </div>
   )
 }
