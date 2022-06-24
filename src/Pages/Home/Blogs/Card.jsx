@@ -74,10 +74,10 @@ export const Text = styled(Typography)(({ theme }) => ({
   fontFamily: "Manrope",
   marginBottom: 9,
 }));
-export const Card = () => {
+export const BlogCard = ({ data }) => {
   return (
     <Root>
-      {blogsData.map((item) => (
+      {data.map((item) => (
         <Thumbnail key={item.id}>
           <Box sx={{ height: "20rem" }}>
             <Image src={item.img} />
