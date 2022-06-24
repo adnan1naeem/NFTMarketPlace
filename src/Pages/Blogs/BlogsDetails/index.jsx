@@ -1,16 +1,22 @@
 import { Box } from "@mui/material";
+import Navbar from "components/Navbar/Navbar";
 import React from "react";
 import { AboutAuthor } from "./AboutCreator";
+import BlogHeader from "./BlogHeader/BlogHeader";
 import { CommentsForm } from "./CommentsForm";
 import { FormHeader } from "./CommentsForm/FormHeader";
 import { ExistingComments } from "./ExistingComments";
 export const BlogDetails = () => {
   return (
-    <Box sx={{ margin: "5% 7%" }}>
-      <AboutAuthor />
-      <ExistingComments />
-      <FormHeader />
-      <CommentsForm />
-    </Box>
+    <>
+      <Navbar />
+      <Box sx={{ margin: "5% 7%" }}>
+        <BlogHeader />
+        <AboutAuthor />
+        <ExistingComments />
+        <FormHeader />
+        <CommentsForm />
+      </Box>
+    </>
   );
 };

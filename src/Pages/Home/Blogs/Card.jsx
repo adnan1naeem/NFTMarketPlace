@@ -3,6 +3,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { FaCalendarAlt, FaRegCommentDots } from "react-icons/fa";
 import { BsArrowDownRight } from "react-icons/bs";
+import { useNavigate } from "react-router";
 const Root = styled(Box)(({ theme }) => ({
   margin: "10px 7%",
   flexWrap: "wrap",
@@ -74,6 +75,7 @@ export const Text = styled(Typography)(({ theme }) => ({
   marginBottom: 9,
 }));
 export const BlogCard = ({ data }) => {
+  const navigate = useNavigate();
   return (
     <Root>
       {data.map((item) => (
@@ -104,6 +106,7 @@ export const BlogCard = ({ data }) => {
                 "&:hover": { textDecoration: "underline" },
                 margin: "20px 0px",
               }}
+              onClick={() => navigate("/blogdetails")}
             >
               <Text sx={{ color: "#6366F1" }}>Read More </Text>
               <BsArrowDownRight
