@@ -1,9 +1,8 @@
-import { Box, Grid, styled, Typography } from "@mui/material";
-import nftImg from "../../assets/Images/ExploreItem/26.jpg";
-import React,{useState, useEffect} from "react";
+import { Grid, styled, Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
 import { CreateDetails } from "./CreateDetails";
 import { Price } from "./Price";
-import { useParams } from 'react-router-dom';
+import { useParams } from "react-router-dom";
 import { exploreCardData } from "assets/Data";
 const Image = styled("img")(({ theme }) => ({
   borderRadius: "8px",
@@ -37,15 +36,15 @@ export const ItemDetails = () => {
   const [nftImg, setNftImg] = useState();
   const [nftName, setNftName] = useState();
   const { id } = useParams();
-  console.log('id of item details is ', id);
+  console.log("id of item details is ", id);
   const getNftDetails = () => {
-    for(let i=0; i<exploreCardData.length; i++){
-      if(exploreCardData[i]?.id == id ){
+    for (let i = 0; i < exploreCardData.length; i++) {
+      if (exploreCardData[i]?.id == id) {
         setNftImg(exploreCardData[i].img);
         setNftName(exploreCardData[i].heading);
       }
     }
-  }
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
     getNftDetails();

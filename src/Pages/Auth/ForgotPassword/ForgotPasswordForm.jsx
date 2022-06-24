@@ -2,8 +2,6 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { Box, Button, Typography } from "@mui/material";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-
-import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import Error from "components/UI/Error";
 import FormField from "components/UI/FormikField";
@@ -32,9 +30,7 @@ function ForgotPasswordForm({ onSubmit }) {
     validationSchema,
     onSubmit,
   });
-  const navigate = useNavigate();
   const emailProps = formik.getFieldProps("email");
-  const passwordProps = formik.getFieldProps("password");
   return (
     <>
       <Form

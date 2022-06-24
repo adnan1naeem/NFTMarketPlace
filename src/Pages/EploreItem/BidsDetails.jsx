@@ -121,7 +121,11 @@ export const BidsDetails = () => {
           <Box
             sx={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}
           >
-            <img src={ethIcon} style={{ width: "1.5rem", height: "1.5rem" }} />
+            <img
+              src={ethIcon}
+              style={{ width: "1.5rem", height: "1.5rem" }}
+              alt=""
+            />
             <Text sx={{ fontSize: "16px", fontWeight: 700, marginLeft: 1 }}>
               {item.ammount} ETH
             </Text>

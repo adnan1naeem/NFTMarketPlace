@@ -18,7 +18,7 @@ export const Bid = () => {
       <Text>Current Bid</Text>
       <Box>
         <Box sx={{ display: "flex" }}>
-          <img src={ethIcon} style={{ marginRight: 5 }} />
+          <img src={ethIcon} style={{ marginRight: 5 }} alt="" />
           <Text sx={{ fontSize: 16, fontWeight: 600, color: "#0F172A" }}>
             1.02 ETH
           </Text>

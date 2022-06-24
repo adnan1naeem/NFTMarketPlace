@@ -1,10 +1,9 @@
 import { Box, styled } from "@mui/material";
 import Navbar from "components/Navbar/Navbar";
-import React,{useEffect, useState} from "react";
+import React, { useEffect } from "react";
 import { Address } from "./Address";
 import { Header } from "./Header";
 import { ItemDetails } from "./ItemDetails";
-
 
 const Root = styled(Box)(({ theme }) => ({
   margin: "7% 7%",
@@ -13,7 +12,6 @@ const Root = styled(Box)(({ theme }) => ({
   },
 }));
 export const ExploreItem = () => {
-  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

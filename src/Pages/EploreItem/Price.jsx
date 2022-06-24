@@ -1,7 +1,6 @@
 import { Box, styled, Typography } from "@mui/material";
 import BidModal from "components/Model/BidModal";
 import React from "react";
-import { ImHammer2 } from "react-icons/im";
 import ethIcon from "../../assets/Images/cryptocurrency-icon.svg";
 const Text = styled(Typography)(({ theme }) => ({
   fontFamily: "Nunito",
@@ -20,7 +19,7 @@ export const Price = () => {
     >
       <Text sx={{ marginBottom: "1rem" }}>Highest Price</Text>
       <Box sx={{ display: "flex", alignItems: "center", marginBottom: "1rem" }}>
-        <img src={ethIcon} style={{ width: "2rem", height: "2rem" }} />
+        <img src={ethIcon} style={{ width: "2rem", height: "2rem" }} alt="" />
         <Text sx={{ fontSize: "1.5rem", fontWeight: 700, marginLeft: 1 }}>
           0.080 ETH
         </Text>
@@ -35,24 +34,7 @@ export const Price = () => {
           ≈$26.69
         </Text>
       </Box>
-      {/* <Box
-        sx={{
-          background: "#6366F1",
-          borderRadius: "8px",
-          color: "white",
-          display: "flex",
-          alignItems: "center",
-          fpntFamily: "Manrope",
-          marginTop: "1rem",
-          padding: "10px 20px",
-          zIndex: "5",
-          fontWeight: 500,
-          cursor: "pointer",
-        }}
-      >
-        <ImHammer2 style={{ marginRight: 8 }} />
-        <Typography sx={{ fontSize: "1.25rem" }}>Place a bid</Typography>
-      </Box> */}
+
       <BidModal />
     </Box>
   );

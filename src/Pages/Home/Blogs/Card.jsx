@@ -1,7 +1,6 @@
 import { styled } from "@mui/material";
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { blogsData } from "assets/Data";
 import { FaCalendarAlt, FaRegCommentDots } from "react-icons/fa";
 import { BsArrowDownRight } from "react-icons/bs";
 const Root = styled(Box)(({ theme }) => ({

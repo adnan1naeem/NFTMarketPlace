@@ -13,6 +13,7 @@ import { RegisterPage } from "Pages/Auth/Signup/RegisterPage";
 import { Category } from "Pages/Blogs/Category";
 import { Tag } from "Pages/Blogs/Tag";
 import { BlogGrid } from "Pages/Blogs/BlogGrid";
+import { BlogDetails } from "Pages/Blogs/BlogsDetails";
 
 const NFTRoutes = () => {
   return (
@@ -32,6 +33,7 @@ const NFTRoutes = () => {
         <Route path="/category" element={<Category />} />
         <Route path="/tag" element={<Tag />} />
         <Route path="/bloggrid" element={<BlogGrid />} />
+        <Route path="/blogdetails" element={<BlogDetails />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,6 +1,5 @@
 import { Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import React from "react";
 export const NunitoText = styled(Typography)(({ theme }) => ({
   fontFamily: "Nunito",
   color: "#0F172A",

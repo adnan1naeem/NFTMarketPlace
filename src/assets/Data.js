@@ -3,7 +3,6 @@ import Mindfullness from "./Images/Home/Mindfullness.jpg";
 import joana from "./Images/Seller LeaderBoard/joana.jpg";
 import steven from "./Images/Seller LeaderBoard/steven.jpg";
 import leah from "./Images/Seller LeaderBoard/leah.jpg";
-import melanie from "./Images/Seller LeaderBoard/melanie.jpg";
 import trinity from "./Images/Seller LeaderBoard/trinity.jpg";
 import item1 from "./Images/Seller LeaderBoard/1.gif";
 import item2 from "./Images/Seller LeaderBoard/2.jpg";
@@ -26,6 +25,7 @@ import img6 from "./Images/Blogs/10.jpg";
 import img7 from "./Images/Blogs/11.jpg";
 import img8 from "./Images/Blogs/12.jpg";
 import img9 from "./Images/Blogs/13.jpg";
+import jermey from "./Images/Blogs/jermey.jpg";
 
 export const nftCollectionData = [
   {
@@ -403,12 +403,10 @@ export const exploreCardData = [
       {
         img: steven,
         id: "le",
-        img: leah,
       },
       {
         img: steven,
         id: "jj",
-        img: joana,
       },
     ],
     likes: "90",
@@ -953,5 +951,37 @@ export const blogsCategoryData = [
     date: "31 June 2022",
     numCmt: "60",
     id: "hon9",
+  },
+];
+export const blogCommentsData = [
+  {
+    text: "Proposal. Proceeded to salesmen the implemented aged create subjective you you'd fame, in flatter maybe frequencies on",
+    img: jermey,
+    name: "Jermey Stephen",
+    id: "je",
+  },
+  {
+    text: "Been as big couldn't teacher's replied affects especially evaluate best at the retired, have be circumstances. Client intended multitude Separated both they or a into at be but improve small indication instruments, and weary the lack time trying. Phase absolutely is values, life And assumed one in for conduct, gave of and the history by frequency; Emerged.",
+    img: leah,
+    name: "Leah Weili",
+    id: "le",
+  },
+  {
+    text: "Designer; Could in which only versus in, officers are was appeared the collection fresh table its around big countries geared to nice equally but free in without. Any it's her from poverty being because curiously, tone was appeared the both to gm dragged in up can and on their know.",
+    img: steven,
+    name: "Steven Thomson",
+    id: "st",
+  },
+  {
+    text: "Is nature, listen. Felt me. Tones it could attempt. Who like the doctor many was are to encouraged room. Feedback accordingly what entrance that fate how at represent and publication easier step and or that one hesitated italic the we lively. Fur son, schemes",
+    img: trinity,
+    name: "Trinity Holmes",
+    id: "tr",
+  },
+  {
+    text: "Proposal. Proceeded to salesmen the implemented aged create subjective you you'd fame, in flatter maybe frequencies on",
+    img: jermey,
+    name: "Jermey Stevens",
+    id: "jr",
   },
 ];

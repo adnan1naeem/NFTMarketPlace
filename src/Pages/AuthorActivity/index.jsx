@@ -1,29 +1,24 @@
-import AuthorDetails from 'components/AuthorDetails/AuthorDetails'
-import Navbar from 'components/Navbar/Navbar'
-import React, { useEffect, useState } from 'react'
-import { Buttons } from './Button'
-import LoadingButton from 'components/UI/LoadingButton'
-import './activityCard.css'
-import ActivityCard from './ActivityCard'
-import { AuthorActivityData } from 'assets/Data'
+import AuthorDetails from "components/AuthorDetails/AuthorDetails";
+import Navbar from "components/Navbar/Navbar";
+import React, { useEffect } from "react";
+import { Buttons } from "./Button";
+import LoadingButton from "components/UI/LoadingButton";
+import "./activityCard.css";
+import ActivityCard from "./ActivityCard";
+import { AuthorActivityData } from "assets/Data";
 const AuthorActivity = () => {
-  const [zoom, setZoom] = useState(false)
-  const handleHover = () => {
-    console.log('zoom is ', zoom)
-    setZoom(!zoom)
-  }
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className='flex flex-col items-center'>
-      <div className='mb-32' style={{ maxWidth: '1900px' }}>
+    <div className="flex flex-col items-center">
+      <div className="mb-32" style={{ maxWidth: "1900px" }}>
         <Navbar />
         <AuthorDetails />
-        <div className='mt-20'>
+        <div className="mt-20">
           <Buttons />
         </div>
-        <div className='mt-20 flex justify-center flex-wrap'>
+        <div className="mt-20 flex justify-center flex-wrap">
           {AuthorActivityData.map((i) => {
             return (
               <ActivityCard
@@ -36,12 +31,12 @@ const AuthorActivity = () => {
                 color={i.color}
                 iconBg={i.iconBg}
               />
-            )
+            );
           })}
         </div>
         <LoadingButton />
       </div>
     </div>
-  )
-}
-export default AuthorActivity
+  );
+};
+export default AuthorActivity;

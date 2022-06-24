@@ -1,5 +1,4 @@
 import { Box, styled, Typography } from "@mui/material";
-import LoadingButton from "components/UI/LoadingButton";
 import React from "react";
 import { Bid } from "./Bid";
 import { Image } from "./Image";
@@ -17,7 +16,7 @@ const Root = styled(Box)(({ theme }) => ({
   "&:hover": {
     backgroundColor: "#d9f5fa",
     cursor: "pointer",
-    border: "2px solid #9448f7"
+    border: "2px solid #9448f7",
   },
   [theme.breakpoints.only("xs")]: {
     width: "300px",
@@ -36,8 +35,8 @@ export const Thumbnail = ({ data }) => {
     >
       {data.map((item) => (
         <Root>
-          <Image src={item.img} id={item.id}/>
-          <Likes data={item.imgs} likes={item.likes} id={item.id}/>
+          <Image src={item.img} id={item.id} />
+          <Likes data={item.imgs} likes={item.likes} id={item.id} />
           <Box
             sx={{
               width: "100%",

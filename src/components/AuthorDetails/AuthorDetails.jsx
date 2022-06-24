@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { sellerLeaderboardData } from "assets/Data";
 import { AuthorsData } from "assets/Data";
 const AuthorDetails = () => {
   const [name, setName] = useState();
@@ -29,6 +28,7 @@ const AuthorDetails = () => {
             className="rounded-full object-cover"
             style={{ width: "100%", height: "100%" }}
             src={pic}
+            alt=""
           />
         </div>
         <div className="w-7 h-7 rounded-full absolute ml-28 mt-20">
@@ -36,6 +36,7 @@ const AuthorDetails = () => {
             className="rounded-full object-cover"
             style={{ width: "100%", height: "100%" }}
             src="https://html-tokenmart.netlify.app/light/assets/images/verified-icon.svg"
+            alt=""
           />
         </div>
       </div>
@@ -52,6 +53,7 @@ const AuthorDetails = () => {
               className=""
               style={{ width: "100%", height: "100%" }}
               src="https://html-tokenmart.netlify.app/light/assets/images/diamond-icon.svg"
+              alt=""
             />
           </div>
           <p className="text-lg text-gray-600"> Diamond Seller</p>
@@ -68,6 +70,7 @@ const AuthorDetails = () => {
             <img
               className=""
               src="https://html-tokenmart.netlify.app/light/assets/images/level-icon.svg"
+              alt=""
             />
           </span>
           <span className="mt-5 ml-2 font-semibold">Level {level}s</span>
@@ -77,6 +80,7 @@ const AuthorDetails = () => {
             <img
               className=""
               src="https://html-tokenmart.netlify.app/light/assets/images/heart-icon2.svg"
+              alt=""
             />
           </span>
           <span className="mt-5 ml-2 font-semibold">90 Likes</span>
@@ -86,6 +90,7 @@ const AuthorDetails = () => {
             <img
               className=""
               src="https://html-tokenmart.netlify.app/light/assets/images/item-icon.svg"
+              alt=""
             />
           </span>
           <span className="mt-5 ml-2 font-semibold">{items} Items</span>
@@ -100,6 +105,7 @@ const AuthorDetails = () => {
               <img
                 src="https://html-tokenmart.netlify.app/light/assets/images/comment-icon.svg"
                 style={{ width: "100%", height: "100%" }}
+                alt=""
               />
             </div>
             Send Message
@@ -112,6 +118,7 @@ const AuthorDetails = () => {
               <img
                 src="https://html-tokenmart.netlify.app/light/assets/images/author-icon.svg"
                 style={{ width: "100%", height: "100%" }}
+                alt=""
               />
             </div>
             Follow

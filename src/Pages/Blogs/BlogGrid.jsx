@@ -10,7 +10,7 @@ export const BlogGrid = () => {
     <Box>
       <Navbar />
       <NunitoText
-        sx={{ fontSize: "3.75rem", fontWeight: 700, margin: "5% 7%" }}
+        sx={{ fontSize: "3.75rem", fontWeight: 700, margin: "7% 7%" }}
       >
         BlogGrid - NFT
       </NunitoText>

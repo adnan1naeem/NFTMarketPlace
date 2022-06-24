@@ -1,5 +1,3 @@
-import { images } from "./../../assets/Images";
-
 const Modal = (props) => {
   return (
     <>
@@ -12,8 +10,11 @@ const Modal = (props) => {
           >
             {/*header*/}
             <div className="w-full flex items-start justify-end p-5 rounded-t">
-              <div className="-mt-5 flex items-center justify-end cursor-pointer" onClick={props.handleClose}>
-              <h1 className="text-4xl"> x</h1>
+              <div
+                className="-mt-5 flex items-center justify-end cursor-pointer"
+                onClick={props.handleClose}
+              >
+                <h1 className="text-4xl"> x</h1>
               </div>
             </div>
             {/*body*/}
@@ -23,7 +24,7 @@ const Modal = (props) => {
         </div>
       </div>
       <div className="opacity-75 cursor-none fixed inset-0 z-40 bg-black"></div>
-      </>
+    </>
   );
 };
 export default Modal;
