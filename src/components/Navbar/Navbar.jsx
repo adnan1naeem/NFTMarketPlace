@@ -196,7 +196,7 @@ const Navbar = ({ screen }) => {
                   </span>
                   <div
                     //h-72 is original but h-24 is temp
-                    className={`w-40 h-36 bg-white shadow shadow-xl absolute ${
+                    className={`w-40 h-44 bg-white shadow shadow-xl absolute ${
                       showPageMenu ? 'lg:flex lg:flex-col' : 'hidden'
                     }`}
                   >
@@ -207,7 +207,7 @@ const Navbar = ({ screen }) => {
                     </div>
                     <div
                       //h-10 is original but h-12 is temp
-                      className='w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2'
+                      className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'
                       onMouseOver={handleSubAuthorHover}
                       onMouseOut={handleSubAuthorHover}
                     >
@@ -290,47 +290,49 @@ const Navbar = ({ screen }) => {
                       </div>
                     </div>
 
+                    <div
+                      className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'
+                      onMouseOver={handleSubBlogHover}
+                      onMouseOut={handleSubBlogHover}
+                    >
+                      <span className='flex justify-between items-start'>
+                        {' '}
+                        <h1>Blog</h1>
+                        <div className='w-3 h-3 mt-2 ml-24'>
+                          <img
+                            src={images.rightArrow}
+                            style={{ width: '100%', height: '100%' }}
+                          />
+                        </div>
+                      </span>
+                      <div
+                        className={`w-36 h-40 bg-white shadow shadow-4xl absolute z-20 mt-24 ${
+                          showSubBlogMenu ? 'lg:flex lg:flex-col' : 'hidden'
+                        }`}
+                        style={{ marginLeft: '152px' }}
+                      >
+                        <div className='w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2'>
+                          <h1 className='pt-2'>Blog Details</h1>
+                        </div>
+                        <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
+                          <h1 className=''>Category</h1>
+                        </div>
+                        <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
+                          <h1 className=''>Tag</h1>
+                        </div>
+                        <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
+                          <h1 className=''>Blog Grid</h1>
+                        </div>
+                      </div>
+                    </div>
+
                     {/* these following four closing tags are to be removed before uncomment below content */}
                   </div>
                 </NavLink>
               </div>
 
               {/* {/*
-                    <div
-                      className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2"
-                      onMouseOver={handleSubBlogHover}
-                      onMouseOut={handleSubBlogHover}
-                    >
-                      <span className="flex justify-between items-start">
-                        {" "}
-                        <h1>Blog</h1>
-                        <div className="w-3 h-3 mt-2 ml-24">
-                          <img
-                            src={images.rightArrow}
-                            style={{ width: "100%", height: "100%" }}
-                          />
-                        </div>
-                      </span>
-                      <div
-                        className={`w-36 h-40 bg-white shadow shadow-4xl absolute z-20 mt-24 ${
-                          showSubBlogMenu ? "lg:flex lg:flex-col" : "hidden"
-                        }`}
-                        style={{ marginLeft: "152px" }}
-                      >
-                        <div className="w-full h-12 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="pt-2">Blog Details</h1>
-                        </div>
-                        <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="">Category</h1>
-                        </div>
-                        <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="">Tag</h1>
-                        </div>
-                        <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
-                          <h1 className="">Blog Grid</h1>
-                        </div>
-                      </div>
-                    </div>
+                    
                     <div className="w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2">
                       <h1 className="">Contact</h1>
                     </div>
