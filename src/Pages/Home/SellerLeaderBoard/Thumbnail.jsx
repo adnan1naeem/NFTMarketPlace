@@ -108,13 +108,14 @@ export const LeaderBoardThumbnail = ({ data, show }) => {
                     >
                       <Box
                         sx={{
-                          color: item.color,
+                          color: "rgba(71,85,105)",
                           fontSize: "20px",
                           display: "flex",
                           alignItems: "center",
                         }}
                       >
-                        {item.icon}
+                        <Box sx={{ color: item.color }}>{item.icon}</Box>
+
                         {item.rank}
                       </Box>
                     </Flex>

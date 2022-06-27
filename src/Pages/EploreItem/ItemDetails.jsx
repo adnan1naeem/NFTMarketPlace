@@ -36,7 +36,6 @@ export const ItemDetails = () => {
   const [nftImg, setNftImg] = useState();
   const [nftName, setNftName] = useState();
   const { id } = useParams();
-  console.log("id of item details is ", id);
   const getNftDetails = () => {
     for (let i = 0; i < exploreCardData.length; i++) {
       if (exploreCardData[i]?.id == id) {
