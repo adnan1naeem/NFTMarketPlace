@@ -1,5 +1,5 @@
 import { Box, styled, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import arrow from '../../assets/Images/explore/right-arrow.svg'
 
@@ -23,13 +23,16 @@ const Text = styled(Typography)(({ theme }) => ({
 
 export const Header = () => {
   const navigate = useNavigate()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <Box
       sx={{
         margin: '7% 7%',
       }}
     >
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', marginTop: '150px' }}>
         <Heading>LeaderBoard</Heading>
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
