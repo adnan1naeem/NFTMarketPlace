@@ -303,6 +303,7 @@ const Navbar = ({ screen }) => {
                         <h1>Blog</h1>
                         <div className='w-3 h-3 mt-2 ml-24'>
                           <img
+                            alt='arrow'
                             src={images.rightArrow}
                             style={{ width: '100%', height: '100%' }}
                           />
@@ -338,7 +339,9 @@ const Navbar = ({ screen }) => {
                     </div>
 
                     <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                      <h1 className=''>Contact</h1>
+                      <NavLink to='/contactus'>
+                        <h1 className=''>Contact</h1>
+                      </NavLink>
                     </div>
                     <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
                       <NavLink to='/termsandconditions'>

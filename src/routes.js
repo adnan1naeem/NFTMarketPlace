@@ -17,6 +17,8 @@ import { BlogDetails } from 'Pages/Blogs/BlogsDetails'
 import Tac from 'Pages/Terms&Conditions'
 import Activity from 'Pages/Activity'
 import Error from 'Pages/404'
+import { ContactUs } from 'Pages/Contact'
+import { LeaderBoard } from 'Pages/LeaderBoard'
 const NFTRoutes = () => {
   return (
     <BrowserRouter>
@@ -51,6 +53,8 @@ const NFTRoutes = () => {
         <Route path='/termsandconditions' element={<Tac />} />
         <Route path='/activity' element={<Activity />} />
         <Route path='/error404' element={<Error />} />
+        <Route path='/contactus' element={<ContactUs />} />
+        <Route path='/leaderboard' element={<LeaderBoard />} />
       </Routes>
     </BrowserRouter>
   )

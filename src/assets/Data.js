@@ -26,6 +26,10 @@ import img7 from './Images/Blogs/11.jpg'
 import img8 from './Images/Blogs/12.jpg'
 import img9 from './Images/Blogs/13.jpg'
 import jermey from './Images/Blogs/jermey.jpg'
+import xavier from './Images/LeaderBoard/2.jpg'
+import christina from './Images/LeaderBoard/1.jpg'
+
+import { BsCaretDownFill, BsCaretUpFill } from 'react-icons/bs'
 
 export const nftCollectionData = [
   {
@@ -316,6 +320,9 @@ export const sellerLeaderboardData = [
     pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg',
     name: 'Leslie Alexander',
     id: 1,
+    icon: <BsCaretUpFill />,
+    rank: '1',
+    color: 'green',
     items: {
       item1: item1,
       item2: item2,
@@ -328,6 +335,9 @@ export const sellerLeaderboardData = [
     pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg',
     name: 'Floyd Miles',
     id: 2,
+    icon: <BsCaretDownFill />,
+    rank: '2',
+    color: 'red',
     items: {
       item1: item1,
       item2: item2,
@@ -340,6 +350,9 @@ export const sellerLeaderboardData = [
     pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg',
     name: 'Ronald Richards',
     id: 3,
+    icon: <BsCaretDownFill />,
+    color: 'red',
+    rank: '3',
     items: {
       item1: item1,
       item2: item2,
@@ -352,6 +365,9 @@ export const sellerLeaderboardData = [
     pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg',
     name: 'Dianne Russell',
     id: 4,
+    icon: <BsCaretUpFill />,
+    rank: '4',
+    color: 'green',
     items: {
       item1: item1,
       item2: item2,
@@ -364,6 +380,9 @@ export const sellerLeaderboardData = [
     pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg',
     name: 'Darrell Steward',
     id: 5,
+    icon: <BsCaretUpFill />,
+    rank: '5',
+    color: 'green',
     items: {
       item1: item1,
       item2: item2,
@@ -1257,5 +1276,113 @@ export const MarketActivityData = [
       'https://html-tokenmart.netlify.app/light/assets/images/activity-icon6.svg',
     color: 'bg-pink-100',
     iconBg: 'bg-pink-200',
+  },
+]
+
+export const LeaderboardData = [
+  {
+    pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg',
+    name: 'Leslie Alexander',
+    id: 1,
+    icon: <BsCaretUpFill />,
+    rank: '1',
+    color: 'green',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
+  },
+  {
+    pic: leah,
+    name: 'Floyd Miles',
+    id: 2,
+    icon: <BsCaretDownFill />,
+    rank: '2',
+    color: 'red',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
+  },
+  {
+    pic: christina,
+    name: 'Ronald Richards',
+    id: 3,
+    icon: <BsCaretDownFill />,
+    color: 'red',
+    rank: '3',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
+  },
+  {
+    pic: xavier,
+    name: 'Dianne Russell',
+    id: 4,
+    icon: <BsCaretUpFill />,
+    rank: '4',
+    color: 'green',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
+  },
+  {
+    pic: trinity,
+    name: 'Darrell Steward',
+    id: 5,
+    icon: <BsCaretUpFill />,
+    rank: '5',
+    color: 'green',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
+  },
+  {
+    pic: joana,
+    name: 'Darrell Steward',
+    id: 6,
+    icon: <BsCaretDownFill />,
+    rank: '6',
+    color: 'red',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
+  },
+  {
+    pic: steven,
+    name: 'Joana Jacheck',
+    id: 7,
+    icon: <BsCaretUpFill />,
+    rank: '7',
+    color: 'green',
+    items: {
+      item1: item1,
+      item2: item2,
+      item3: item3,
+      item4: item4,
+      item5: item5,
+    },
   },
 ]

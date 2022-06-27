@@ -11,6 +11,7 @@ const Error = () => {
       <div className='mt-32 md:mt-52 flex flex-col items-center w-full justify-center'>
         <div className='w-20 h-20'>
           <img
+            alt='logo'
             src='https://html-tokenmart.netlify.app/light/assets/images/error-logo.png'
             style={{ width: '100%', height: '100%' }}
           />

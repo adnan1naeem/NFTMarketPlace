@@ -200,6 +200,7 @@ function RegisterForm({ onSubmit }) {
               "&:disabled": {
                 cursor: "not-allowed",
                 opacity: "0.5",
+                color: "white",
               },
             }}
             endIcon={<HiOutlineArrowNarrowRight />}
