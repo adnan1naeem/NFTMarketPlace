@@ -49,12 +49,21 @@ export const LeaderBoardThumbnail = ({ data, show }) => {
   const navigate = useNavigate()
   const isMobile = useMediaQuery('(max-width:600px)')
   return (
-    <>
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <Flex
         sx={{
           justifyContent: 'space-between',
           margin: '2% 7%',
           display: show ? 'flex' : 'none',
+          maxWidth: 1280,
+          width: '100%',
         }}
       >
         <Flex>
@@ -157,6 +166,6 @@ export const LeaderBoardThumbnail = ({ data, show }) => {
           </NavLink>
         ))}
       </Root>
-    </>
+    </Box>
   )
 }
