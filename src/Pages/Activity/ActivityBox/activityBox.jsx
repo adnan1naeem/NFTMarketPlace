@@ -1,10 +1,10 @@
 import React from 'react'
-import './activityCard.css'
+import './activityBox.css'
 import { NavLink } from 'react-router-dom'
-const ActivityCard = (props) => {
+const ActivityBox = (props) => {
   return (
     <div
-      className={`flex w-4/5 sm:w-2/3 rounded-lg items-center mt-10 transition ease-in-out delay-150 hover:shadow hover:shadow-lg go ${props.color}`}
+      className={`flex w-full rounded-lg items-center mt-10 transition ease-in-out delay-150 hover:shadow hover:shadow-lg ${props.color} go`}
     >
       <div className={`w-28 h-28 m-5 rounded-lg flex items-center`}>
         <img
@@ -36,7 +36,6 @@ const ActivityCard = (props) => {
                 to={`/authors/${props.id}`}
                 className='font-semibold text-black hover:text-indigo-500'
               >
-                {' '}
                 {props.by}
               </NavLink>
             </p>
@@ -56,4 +55,4 @@ const ActivityCard = (props) => {
     </div>
   )
 }
-export default ActivityCard
+export default ActivityBox

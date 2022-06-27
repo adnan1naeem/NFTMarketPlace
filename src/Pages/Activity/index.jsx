@@ -1,26 +1,20 @@
-import AuthorDetails from 'components/AuthorDetails/AuthorDetails'
+import React from 'react'
 import Navbar from 'components/Navbar/Navbar'
-import React, { useEffect } from 'react'
-import { Buttons } from './Button'
-import './activityCard.css'
-import ActivityCard from './ActivityCard'
+import { Header } from './Header'
+import { Buttons } from './Buttons/Buttons'
 import { MarketActivityData } from 'assets/Data'
-const AuthorActivity = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+import ActivityBox from './ActivityBox/activityBox'
+const Activity = () => {
   return (
     <div className='flex flex-col items-center'>
-      <div className='mb-32' style={{ maxWidth: '1900px' }}>
+      <div className='mx-5 md:mx-10' style={{ maxWidth: '1900px' }}>
         <Navbar />
-        <AuthorDetails />
-        <div className='mt-20'>
-          <Buttons />
-        </div>
-        <div className='mt-20 flex justify-center flex-wrap'>
+        <Header />
+        <Buttons />
+        <div className=' flex w-full justify-center flex-wrap mb-32'>
           {MarketActivityData.map((i) => {
             return (
-              <ActivityCard
+              <ActivityBox
                 id={i.id}
                 img={i.img}
                 title={i.title}
@@ -38,4 +32,4 @@ const AuthorActivity = () => {
     </div>
   )
 }
-export default AuthorActivity
+export default Activity

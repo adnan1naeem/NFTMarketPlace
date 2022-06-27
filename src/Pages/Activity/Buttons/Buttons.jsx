@@ -1,5 +1,6 @@
 import { Box, styled } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
+
 const ActiveButton = styled('button')(({ theme }) => ({
   background: '#6366F1',
   fontFamily: 'Manrope',
@@ -43,14 +44,27 @@ const Button = styled('button')(({ theme }) => ({
   },
 }))
 export const Buttons = () => {
+  const handleClickBtn = () => {
+    window.scrollTo(0, 0)
+  }
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
-    <Box sx={{ display: 'flex', margin: '10% 8.5%', flexWrap: 'wrap' }}>
-      <ActiveButton>All</ActiveButton>
-      <Button>Art</Button>
-      <Button>Music</Button>
-      <Button>Domain Names</Button>
-      <Button>Virtual Worlds</Button>
-      <Button>Trading Cards</Button>
+    <Box
+      sx={{
+        display: 'flex',
+        marginTop: '10%',
+        marginBottom: '2%',
+        flexWrap: 'wrap',
+      }}
+    >
+      <ActiveButton onClick={handleClickBtn}>All</ActiveButton>
+      <Button onClick={handleClickBtn}>Listing</Button>
+      <Button onClick={handleClickBtn}>Following</Button>
+      <Button onClick={handleClickBtn}>Biding</Button>
+      <Button onClick={handleClickBtn}>Unfollow</Button>
+      <Button onClick={handleClickBtn}>Sales</Button>
     </Box>
   )
 }

@@ -25,16 +25,18 @@ export const Header = () => {
   const navigate = useNavigate()
   return (
     <>
-      <Box sx={{ display: 'flex', margin: '20px 0%' }}>
-        <Heading>Explore Item</Heading>
-      </Box>
-      <Box sx={{ display: 'flex', margin: '3% 0%', alignItems: 'center' }}>
-        <Text onClick={() => navigate('/')}>Home</Text>
-        <img src={arrow} alt='' style={{ margin: '0px 5px' }} />
-        <Text onClick={() => navigate('/explore')}>Explore</Text>
-        <img src={arrow} alt='' style={{ margin: '0px 5px' }} />
-        <Text sx={{ color: '#327bf0' }}>Item</Text>
-      </Box>
+      <div className='mt-40'>
+        <Box sx={{ display: 'flex', margin: '20px 0%' }}>
+          <Heading>Explore Item</Heading>
+        </Box>
+        <Box sx={{ display: 'flex', margin: '3% 0%', alignItems: 'center' }}>
+          <Text onClick={() => navigate('/')}>Home</Text>
+          <img src={arrow} alt='' style={{ margin: '0px 5px' }} />
+          <Text onClick={() => navigate('/explore')}>Explore</Text>
+          <img src={arrow} alt='' style={{ margin: '0px 5px' }} />
+          <Text sx={{ color: '#327bf0' }}>Item</Text>
+        </Box>
+      </div>
     </>
   )
 }

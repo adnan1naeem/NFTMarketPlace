@@ -1,320 +1,320 @@
-import Honouring from "./Images/Home/Honouring.jpg";
-import Mindfullness from "./Images/Home/Mindfullness.jpg";
-import joana from "./Images/Seller LeaderBoard/joana.jpg";
-import steven from "./Images/Seller LeaderBoard/steven.jpg";
-import leah from "./Images/Seller LeaderBoard/leah.jpg";
-import trinity from "./Images/Seller LeaderBoard/trinity.jpg";
-import item1 from "./Images/Seller LeaderBoard/1.gif";
-import item2 from "./Images/Seller LeaderBoard/2.jpg";
-import item3 from "./Images/Seller LeaderBoard/3.jpg";
-import item4 from "./Images/Seller LeaderBoard/4.jpg";
-import item5 from "./Images/Seller LeaderBoard/5.jpg";
-import explore2 from "./Images/4.gif";
-import explore5 from "./Images/explore/5.gif";
-import explore6 from "./Images/explore/6.gif";
-import explore7 from "./Images/explore/7.gif";
-import explore3 from "./Images/explore/20.jpg";
-import explore4 from "./Images/explore/21.jpg";
-import Save from "./Images/Home/Save.jpg";
-import img1 from "./Images/Blogs/5.jpg";
-import img2 from "./Images/Blogs/6.jpg";
-import img3 from "./Images/Blogs/7.jpg";
-import img4 from "./Images/Blogs/8.jpg";
-import img5 from "./Images/Blogs/9.jpg";
-import img6 from "./Images/Blogs/10.jpg";
-import img7 from "./Images/Blogs/11.jpg";
-import img8 from "./Images/Blogs/12.jpg";
-import img9 from "./Images/Blogs/13.jpg";
-import jermey from "./Images/Blogs/jermey.jpg";
+import Honouring from './Images/Home/Honouring.jpg'
+import Mindfullness from './Images/Home/Mindfullness.jpg'
+import joana from './Images/Seller LeaderBoard/joana.jpg'
+import steven from './Images/Seller LeaderBoard/steven.jpg'
+import leah from './Images/Seller LeaderBoard/leah.jpg'
+import trinity from './Images/Seller LeaderBoard/trinity.jpg'
+import item1 from './Images/Seller LeaderBoard/1.gif'
+import item2 from './Images/Seller LeaderBoard/2.jpg'
+import item3 from './Images/Seller LeaderBoard/3.jpg'
+import item4 from './Images/Seller LeaderBoard/4.jpg'
+import item5 from './Images/Seller LeaderBoard/5.jpg'
+import explore2 from './Images/4.gif'
+import explore5 from './Images/explore/5.gif'
+import explore6 from './Images/explore/6.gif'
+import explore7 from './Images/explore/7.gif'
+import explore3 from './Images/explore/20.jpg'
+import explore4 from './Images/explore/21.jpg'
+import Save from './Images/Home/Save.jpg'
+import img1 from './Images/Blogs/5.jpg'
+import img2 from './Images/Blogs/6.jpg'
+import img3 from './Images/Blogs/7.jpg'
+import img4 from './Images/Blogs/8.jpg'
+import img5 from './Images/Blogs/9.jpg'
+import img6 from './Images/Blogs/10.jpg'
+import img7 from './Images/Blogs/11.jpg'
+import img8 from './Images/Blogs/12.jpg'
+import img9 from './Images/Blogs/13.jpg'
+import jermey from './Images/Blogs/jermey.jpg'
 
 export const nftCollectionData = [
   {
     id: 1,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/product/7.gif",
-    title: "Cartoon Art",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/product/7.gif',
+    title: 'Cartoon Art',
+    items: '12',
   },
   {
     id: 2,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/2.jpg",
-    title: "Super Heros",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/2.jpg',
+    title: 'Super Heros',
+    items: '12',
   },
   {
     id: 3,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/3.jpg",
-    title: "Oilprint",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/3.jpg',
+    title: 'Oilprint',
+    items: '12',
   },
   {
     id: 4,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/4.jpg",
-    title: "Virtual Worlds",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/4.jpg',
+    title: 'Virtual Worlds',
+    items: '12',
   },
   {
     id: 5,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/5.jpg",
-    title: "Oil Paint",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/5.jpg',
+    title: 'Oil Paint',
+    items: '12',
   },
   {
     id: 6,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/6.jpg",
-    title: "Collectibles",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/6.jpg',
+    title: 'Collectibles',
+    items: '12',
   },
   {
     id: 7,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/7.jpg",
-    title: "Trading Card",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/7.jpg',
+    title: 'Trading Card',
+    items: '12',
   },
   {
     id: 8,
     nftUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/category/8.jpg",
-    title: "Rare Collections",
-    items: "12",
+      'https://html-tokenmart.netlify.app/light/assets/images/category/8.jpg',
+    title: 'Rare Collections',
+    items: '12',
   },
-];
+]
 export const nftAuctionData = [
   {
     id: 1,
     nftUrl: item1,
-    title: "Creative Oilpaint",
-    likes: "88",
-    priceInEth: "0.008",
-    priceInDoller: "26.69",
-    bids: "12",
+    title: 'Creative Oilpaint',
+    likes: '88',
+    priceInEth: '0.008',
+    priceInDoller: '26.69',
+    bids: '12',
   },
   {
     id: 2,
     nftUrl: explore2,
-    title: "Cyber Boss",
-    likes: "10",
-    priceInEth: "0.003",
-    priceInDoller: "13.69",
-    bids: "10",
+    title: 'Cyber Boss',
+    likes: '10',
+    priceInEth: '0.003',
+    priceInDoller: '13.69',
+    bids: '10',
   },
   {
     id: 3,
     nftUrl: explore3,
-    title: "Commander Titan",
-    likes: "17",
-    priceInEth: "0.001",
-    priceInDoller: "9.24",
-    bids: "2",
+    title: 'Commander Titan',
+    likes: '17',
+    priceInEth: '0.001',
+    priceInDoller: '9.24',
+    bids: '2',
   },
   {
     id: 4,
     nftUrl: explore4,
-    title: "Creative Artwork",
-    likes: "88",
-    priceInEth: "0.005",
-    priceInDoller: "16.69",
-    bids: "14",
+    title: 'Creative Artwork',
+    likes: '88',
+    priceInEth: '0.005',
+    priceInDoller: '16.69',
+    bids: '14',
   },
-];
+]
 export const walletsData = [
   {
     id: 1,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/1.jpg",
-    title: "Trust Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/1.jpg',
+    title: 'Trust Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 2,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/2.jpg",
-    title: "Trustee Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/2.jpg',
+    title: 'Trustee Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 3,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/3.jpg",
-    title: "CoinPayments Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/3.jpg',
+    title: 'CoinPayments Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 4,
     imgUrl:
-      "	https://html-tokenmart.netlify.app/light/assets/images/wallet/4.jpg",
-    title: "SwirlWallet",
+      '	https://html-tokenmart.netlify.app/light/assets/images/wallet/4.jpg',
+    title: 'SwirlWallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 5,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/5.jpg",
-    title: "Trezor Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/5.jpg',
+    title: 'Trezor Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 6,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/6.jpg",
-    title: "Nuri Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/6.jpg',
+    title: 'Nuri Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 7,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/7.jpg",
-    title: "SpectroCoin Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/7.jpg',
+    title: 'SpectroCoin Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 8,
     imgUrl:
-      "	https://html-tokenmart.netlify.app/light/assets/images/wallet/8.jpg",
-    title: "CoolWallet",
+      '	https://html-tokenmart.netlify.app/light/assets/images/wallet/8.jpg',
+    title: 'CoolWallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 9,
     imgUrl:
-      "	https://html-tokenmart.netlify.app/light/assets/images/wallet/9.jpg",
-    title: "SecuX Wallet",
+      '	https://html-tokenmart.netlify.app/light/assets/images/wallet/9.jpg',
+    title: 'SecuX Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 10,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/10.jpg",
-    title: "Amon Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/10.jpg',
+    title: 'Amon Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 11,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/11.jpg",
-    title: "OWNR Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/11.jpg',
+    title: 'OWNR Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 12,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/12.jpg",
-    title: "Infinito Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/12.jpg',
+    title: 'Infinito Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 13,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/13.jpg",
-    title: "Zumo Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/13.jpg',
+    title: 'Zumo Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 14,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/14.jpg",
-    title: "CryptX Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/14.jpg',
+    title: 'CryptX Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 15,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/15.jpg",
-    title: "JuBiter Blade",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/15.jpg',
+    title: 'JuBiter Blade',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 16,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/16.jpg",
-    title: "Edge Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/16.jpg',
+    title: 'Edge Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 17,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/17.jpg",
-    title: "Unstoppable Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/17.jpg',
+    title: 'Unstoppable Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 18,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/18.jpg",
-    title: "Xapo Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/18.jpg',
+    title: 'Xapo Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 19,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/19.jpg",
-    title: "Guarda Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/19.jpg',
+    title: 'Guarda Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
   {
     id: 20,
     imgUrl:
-      "https://html-tokenmart.netlify.app/light/assets/images/wallet/20.jpg",
-    title: "Bread Wallet",
+      'https://html-tokenmart.netlify.app/light/assets/images/wallet/20.jpg',
+    title: 'Bread Wallet',
     description:
-      "Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….",
+      'Devious the by advantage that might his ship alone, endeavours for or understanding their we more tyrannize. Every forest are findings. More or sitting to and seemed to option text like….',
   },
-];
+]
 export const blogsData = [
   {
     img: Mindfullness,
-    heading: "Mindfulness Activities for Kids & Toddlers with NFT",
-    text: "Poverty of in the better in little. Did out held be entered it small...",
-    date: "09 Feb 2022",
-    numCmt: "30",
-    id: "min",
+    heading: 'Mindfulness Activities for Kids & Toddlers with NFT',
+    text: 'Poverty of in the better in little. Did out held be entered it small...',
+    date: '09 Feb 2022',
+    numCmt: '30',
+    id: 'min',
   },
   {
     img: Save,
-    heading: "Save Thousands Of Lives Through This NFT",
-    text: "Staple was it myself. The both writing and area century...",
-    date: "11 Mar 2022",
-    numCmt: "87",
-    id: "sav",
+    heading: 'Save Thousands Of Lives Through This NFT',
+    text: 'Staple was it myself. The both writing and area century...',
+    date: '11 Mar 2022',
+    numCmt: '87',
+    id: 'sav',
   },
   {
     img: Honouring,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon',
   },
-];
+]
 export const sellerLeaderboardData = [
   {
-    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg",
-    name: "Leslie Alexander",
+    pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg',
+    name: 'Leslie Alexander',
     id: 1,
     items: {
       item1: item1,
@@ -325,8 +325,8 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg",
-    name: "Floyd Miles",
+    pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg',
+    name: 'Floyd Miles',
     id: 2,
     items: {
       item1: item1,
@@ -337,8 +337,8 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg",
-    name: "Ronald Richards",
+    pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg',
+    name: 'Ronald Richards',
     id: 3,
     items: {
       item1: item1,
@@ -349,8 +349,8 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg",
-    name: "Dianne Russell",
+    pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg',
+    name: 'Dianne Russell',
     id: 4,
     items: {
       item1: item1,
@@ -361,8 +361,8 @@ export const sellerLeaderboardData = [
     },
   },
   {
-    pic: "https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg",
-    name: "Darrell Steward",
+    pic: 'https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg',
+    name: 'Darrell Steward',
     id: 5,
     items: {
       item1: item1,
@@ -372,45 +372,45 @@ export const sellerLeaderboardData = [
       item5: item5,
     },
   },
-];
+]
 export const navigationData = [
-  { text: "Home", id: "ho" },
-  { text: "Explore", id: "ex" },
-  { text: "Wallet", id: "wa" },
-  { text: "Author", id: "au" },
-  { text: "Terms", id: "te" },
-];
+  { text: 'Home', id: 'ho' },
+  { text: 'Explore', id: 'ex' },
+  { text: 'Wallet', id: 'wa' },
+  { text: 'Author', id: 'au' },
+  { text: 'Terms', id: 'te' },
+]
 export const exploreData = [
-  { text: "Explore Artwork", id: "ea" },
-  { text: "Single Artwork", id: "sa" },
-  { text: "Explore Creators", id: "ec" },
-  { text: "Single Creators", id: "sc" },
-  { text: "Community", id: "co" },
-];
+  { text: 'Explore Artwork', id: 'ea' },
+  { text: 'Single Artwork', id: 'sa' },
+  { text: 'Explore Creators', id: 'ec' },
+  { text: 'Single Creators', id: 'sc' },
+  { text: 'Community', id: 'co' },
+]
 export const communityData = [
-  { text: "Item Details", id: "id" },
-  { text: "Activity", id: "ac" },
-  { text: "Contact", id: "cn" },
-];
+  { text: 'Item Details', id: 'id' },
+  { text: 'Activity', id: 'ac' },
+  { text: 'Contact', id: 'cn' },
+]
 export const exploreCardData = [
   {
     img: item1,
     imgs: [
       {
         img: steven,
-        id: "st",
+        id: 'st',
       },
       {
         img: steven,
-        id: "le",
+        id: 'le',
       },
       {
         img: steven,
-        id: "jj",
+        id: 'jj',
       },
     ],
-    likes: "90",
-    heading: "Creative Oilpaint #07",
+    likes: '90',
+    heading: 'Creative Oilpaint #07',
     id: 1,
   },
   {
@@ -426,8 +426,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Cyber Boss #12",
+    likes: '90',
+    heading: 'Cyber Boss #12',
     id: 2,
   },
   {
@@ -443,8 +443,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Commander Titan #04",
+    likes: '90',
+    heading: 'Commander Titan #04',
     id: 3,
   },
   {
@@ -460,8 +460,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Creative Artwork #01",
+    likes: '90',
+    heading: 'Creative Artwork #01',
     id: 4,
   },
   {
@@ -477,8 +477,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Mega City Artwork",
+    likes: '90',
+    heading: 'Mega City Artwork',
     id: 5,
   },
   {
@@ -494,8 +494,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Creative Artwork #04",
+    likes: '90',
+    heading: 'Creative Artwork #04',
     id: 6,
   },
   {
@@ -511,8 +511,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Commander Titan #05",
+    likes: '90',
+    heading: 'Commander Titan #05',
     id: 7,
   },
   {
@@ -528,8 +528,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Creative Oilpaint #07",
+    likes: '90',
+    heading: 'Creative Oilpaint #07',
     id: 8,
   },
   {
@@ -545,8 +545,8 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Flower Artwork #01",
+    likes: '90',
+    heading: 'Flower Artwork #01',
     id: 9,
   },
   {
@@ -562,538 +562,700 @@ export const exploreCardData = [
         img: joana,
       },
     ],
-    likes: "90",
-    heading: "Creative Mega City",
+    likes: '90',
+    heading: 'Creative Mega City',
     id: 10,
   },
-];
+]
 
 export const exploreItemData = [
   {
     img: steven,
-    name: "Steven Fleming",
-    time: "1 hour ago",
-    id: "st",
-    ammount: "0.073",
-    approx: "8.54",
+    name: 'Steven Fleming',
+    time: '1 hour ago',
+    id: 'st',
+    ammount: '0.073',
+    approx: '8.54',
   },
   {
     img: leah,
-    name: "Leah Vicent",
-    time: "3 hour ago",
-    id: "le",
-    ammount: "0.084",
-    approx: "5.94",
+    name: 'Leah Vicent',
+    time: '3 hour ago',
+    id: 'le',
+    ammount: '0.084',
+    approx: '5.94',
   },
   {
     img: joana,
-    name: "joana Fleming",
-    time: "3 days ago",
-    id: "jo",
-    approx: "9.84",
-    ammount: "0.873",
+    name: 'joana Fleming',
+    time: '3 days ago',
+    id: 'jo',
+    approx: '9.84',
+    ammount: '0.873',
   },
   {
     img: trinity,
-    name: "trinity Fleming",
-    time: "1 day ago",
-    id: "tr",
-    ammount: "0.097",
-    approx: "11.24",
+    name: 'trinity Fleming',
+    time: '1 day ago',
+    id: 'tr',
+    ammount: '0.097',
+    approx: '11.24',
   },
   {
     img: steven,
-    name: "Steven Fleming",
-    time: "7 hour ago",
-    id: "at",
-    ammount: "0.059",
-    approx: "6.76",
+    name: 'Steven Fleming',
+    time: '7 hour ago',
+    id: 'at',
+    ammount: '0.059',
+    approx: '6.76',
   },
-];
+]
 export const exploreItemHistoryData = [
   {
     img: trinity,
-    name: "trinity Fleming",
-    time: "1 day ago",
-    id: "tr",
+    name: 'trinity Fleming',
+    time: '1 day ago',
+    id: 'tr',
   },
   {
     img: steven,
-    name: "Steven Fleming",
-    time: "1 hour ago",
-    id: "st",
+    name: 'Steven Fleming',
+    time: '1 hour ago',
+    id: 'st',
   },
 
   {
     img: leah,
-    name: "Leah Vicent",
-    time: "3 hour ago",
-    id: "le",
+    name: 'Leah Vicent',
+    time: '3 hour ago',
+    id: 'le',
   },
   {
     img: joana,
-    name: "joana Fleming",
-    time: "3 days ago",
-    id: "jo",
+    name: 'joana Fleming',
+    time: '3 days ago',
+    id: 'jo',
   },
 
   {
     img: steven,
-    name: "Steven Fleming",
-    time: "7 hour ago",
-    id: "at",
+    name: 'Steven Fleming',
+    time: '7 hour ago',
+    id: 'at',
   },
-];
+]
 
 export const AuthorsData = [
   {
     id: 1,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg",
-    name: "Leslie Alexander",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg',
+    name: 'Leslie Alexander',
     level: 8,
     items: 17,
     up: true,
   },
   {
     id: 2,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg",
-    name: "Floyd Miles",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg',
+    name: 'Floyd Miles',
     level: 4,
     items: 15,
     up: true,
   },
   {
     id: 3,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg",
-    name: "Ronald Richards",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg',
+    name: 'Ronald Richards',
     level: 7,
     items: 2,
     up: false,
   },
   {
     id: 4,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg",
-    name: "Dianne Russell",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/12.jpg',
+    name: 'Dianne Russell',
     level: 8,
     items: 14,
     up: true,
   },
   {
     id: 5,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg",
-    name: "Darrell Steward",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/13.jpg',
+    name: 'Darrell Steward',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 6,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/14.jpg",
-    name: "Marvin McKinney",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/14.jpg',
+    name: 'Marvin McKinney',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 7,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/15.jpg",
-    name: "Jerome Bell",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/15.jpg',
+    name: 'Jerome Bell',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 8,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/16.jpg",
-    name: "Courtney Henry",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/16.jpg',
+    name: 'Courtney Henry',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 9,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/17.jpg",
-    name: "Theresa Webb",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/17.jpg',
+    name: 'Theresa Webb',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 10,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/18.jpg",
-    name: "Kathryn Murphy",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/18.jpg',
+    name: 'Kathryn Murphy',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 11,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/19.jpg",
-    name: "Arlene McCoy",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/19.jpg',
+    name: 'Arlene McCoy',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 12,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/20.jpg",
-    name: "Eleanor Pena",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/20.jpg',
+    name: 'Eleanor Pena',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 13,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/21.jpg",
-    name: "Jane Cooper",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/21.jpg',
+    name: 'Jane Cooper',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 14,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/22.jpg",
-    name: "Wade Warren",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/22.jpg',
+    name: 'Wade Warren',
     level: 2,
     items: 23,
     up: true,
   },
   {
     id: 15,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/5.jpg",
-    name: "Jenny Wilson",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/5.jpg',
+    name: 'Jenny Wilson',
     level: 2,
     items: 23,
     up: true,
   },
-];
+]
 export const AuthorActivityData = [
   {
     id: 1,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/18.jpg",
-    title: "Top VIP Pass #12",
-    activity: "Listed by @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/18.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Listed by @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon.svg",
-    color: "bg-pink-100",
-    iconBg: "bg-pink-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon.svg',
+    color: 'bg-pink-100',
+    iconBg: 'bg-pink-200',
   },
   {
     id: 2,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/19.jpg",
-    title: "Jhon Doe",
-    activity: "Started following @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/19.jpg',
+    title: 'Jhon Doe',
+    activity: 'Started following @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg",
-    color: "bg-green-100",
-    iconBg: "bg-green-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
   },
   {
     id: 3,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/20.jpg",
-    title: "Jhon Doe",
-    activity: "Started following @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/20.jpg',
+    title: 'Jhon Doe',
+    activity: 'Started following @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg",
-    color: "bg-green-100",
-    iconBg: "bg-green-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
   },
   {
     id: 4,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/21.jpg",
-    title: "Top VIP Pass #12",
-    activity: "Removed following @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/21.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Removed following @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg",
-    color: "bg-blue-100",
-    iconBg: "bg-blue-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-blue-100',
+    iconBg: 'bg-blue-200',
   },
   {
     id: 5,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/22.jpg",
-    title: "Untitled",
-    activity: "Purchased by @Jhon_Doe for 0.11 ETH from @Robert",
-    time: "10 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/22.jpg',
+    title: 'Untitled',
+    activity: 'Purchased by @Jhon_Doe for 0.11 ETH from @Robert',
+    time: '10 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon4.svg",
-    color: "bg-green-100",
-    iconBg: "bg-green-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon4.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
   },
   {
     id: 6,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/23.jpg",
-    title: "Untitled",
-    activity: "Purchased by @Jhon_Doe for 0.11 ETH from @Robert",
-    time: "10 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/23.jpg',
+    title: 'Untitled',
+    activity: 'Purchased by @Jhon_Doe for 0.11 ETH from @Robert',
+    time: '10 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon4.svg",
-    color: "bg-green-100",
-    iconBg: "bg-green-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon4.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
   },
   {
     id: 7,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/24.jpg",
-    title: "Top VIP Pass #12",
-    activity: "Listed by @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/24.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Listed by @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon.svg",
-    color: "bg-pink-100",
-    iconBg: "bg-pink-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon.svg',
+    color: 'bg-pink-100',
+    iconBg: 'bg-pink-200',
   },
   {
     id: 8,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/25.jpg",
-    title: "Jhon Doe",
-    activity: "Started following @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/25.jpg',
+    title: 'Jhon Doe',
+    activity: 'Started following @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg",
-    color: "bg-green-100",
-    iconBg: "bg-green-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
   },
   {
     id: 9,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/26.jpg",
-    title: "Jhon Doe",
-    activity: "Started following @Nikky_Smith",
-    time: "just now",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/26.jpg',
+    title: 'Jhon Doe',
+    activity: 'Started following @Nikky_Smith',
+    time: 'just now',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg",
-    color: "bg-green-100",
-    iconBg: "bg-green-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
   },
   {
     id: 10,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/product/27.jpg",
-    title: "Top VIP Pass #12",
-    activity: "Removed following @Nikky_Smith",
-    time: "1 mins ago",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/27.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Removed following @Nikky_Smith',
+    time: '1 mins ago',
     iconImg:
-      "https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg",
-    color: "bg-blue-100",
-    iconBg: "bg-blue-200",
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-blue-100',
+    iconBg: 'bg-blue-200',
   },
-];
+]
 export const blogsCategoryData = [
   {
     img: img1,
-    heading: "Mindfulness Activities for Kids & Toddlers with NFT",
-    text: "Poverty of in the better in little. Did out held be entered it small...",
-    date: "09 Feb 2022",
-    numCmt: "30",
-    id: "min",
+    heading: 'Mindfulness Activities for Kids & Toddlers with NFT',
+    text: 'Poverty of in the better in little. Did out held be entered it small...',
+    date: '09 Feb 2022',
+    numCmt: '30',
+    id: 'min',
   },
   {
     img: img2,
-    heading: "Save Thousands Of Lives Through This NFT",
-    text: "Staple was it myself. The both writing and area century...",
-    date: "11 Mar 2022",
-    numCmt: "87",
-    id: "sav",
+    heading: 'Save Thousands Of Lives Through This NFT',
+    text: 'Staple was it myself. The both writing and area century...',
+    date: '11 Mar 2022',
+    numCmt: '87',
+    id: 'sav',
   },
   {
     img: img3,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon',
   },
   {
     img: img4,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon4",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon4',
   },
   {
     img: img5,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon5",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon5',
   },
   {
     img: img6,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon6",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon6',
   },
   {
     img: img7,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon7",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon7',
   },
   {
     img: img8,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon8",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon8',
   },
   {
     img: img9,
-    heading: "Honoring Black History Month with Toddlers",
-    text: "At but physics sofa a explorations are trusted curiously ...",
-    date: "31 June 2022",
-    numCmt: "60",
-    id: "hon9",
+    heading: 'Honoring Black History Month with Toddlers',
+    text: 'At but physics sofa a explorations are trusted curiously ...',
+    date: '31 June 2022',
+    numCmt: '60',
+    id: 'hon9',
   },
-];
+]
 export const blogCommentsData = [
   {
     text: "Proposal. Proceeded to salesmen the implemented aged create subjective you you'd fame, in flatter maybe frequencies on",
     img: jermey,
-    name: "Jermey Stephen",
-    id: "je",
+    name: 'Jermey Stephen',
+    id: 'je',
   },
   {
     text: "Been as big couldn't teacher's replied affects especially evaluate best at the retired, have be circumstances. Client intended multitude Separated both they or a into at be but improve small indication instruments, and weary the lack time trying. Phase absolutely is values, life And assumed one in for conduct, gave of and the history by frequency; Emerged.",
     img: leah,
-    name: "Leah Weili",
-    id: "le",
+    name: 'Leah Weili',
+    id: 'le',
   },
   {
     text: "Designer; Could in which only versus in, officers are was appeared the collection fresh table its around big countries geared to nice equally but free in without. Any it's her from poverty being because curiously, tone was appeared the both to gm dragged in up can and on their know.",
     img: steven,
-    name: "Steven Thomson",
-    id: "st",
+    name: 'Steven Thomson',
+    id: 'st',
   },
   {
-    text: "Is nature, listen. Felt me. Tones it could attempt. Who like the doctor many was are to encouraged room. Feedback accordingly what entrance that fate how at represent and publication easier step and or that one hesitated italic the we lively. Fur son, schemes",
+    text: 'Is nature, listen. Felt me. Tones it could attempt. Who like the doctor many was are to encouraged room. Feedback accordingly what entrance that fate how at represent and publication easier step and or that one hesitated italic the we lively. Fur son, schemes',
     img: trinity,
-    name: "Trinity Holmes",
-    id: "tr",
+    name: 'Trinity Holmes',
+    id: 'tr',
   },
   {
     text: "Proposal. Proceeded to salesmen the implemented aged create subjective you you'd fame, in flatter maybe frequencies on",
     img: jermey,
-    name: "Jermey Stevens",
-    id: "jr",
+    name: 'Jermey Stevens',
+    id: 'jr',
   },
-];
+]
 export const AuthorsDataOnLoading = [
   {
     id: 1,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg",
-    name: "Leslie Alexander",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/9.jpg',
+    name: 'Leslie Alexander',
     level: 8,
     items: 17,
     up: true,
   },
   {
     id: 2,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg",
-    name: "Floyd Miles",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/10.jpg',
+    name: 'Floyd Miles',
     level: 4,
     items: 15,
     up: true,
   },
   {
     id: 3,
-    img: "https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg",
-    name: "Ronald Richards",
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/author/11.jpg',
+    name: 'Ronald Richards',
     level: 7,
     items: 2,
     up: false,
   },
-];
+]
 
 export const blogCategories = [
   {
     id: 1,
-    title: "Creator",
+    title: 'Creator',
     items: 24,
   },
   {
     id: 2,
-    title: "Auction",
+    title: 'Auction',
     items: 20,
   },
   {
     id: 3,
-    title: "Marketplace",
+    title: 'Marketplace',
     items: 17,
   },
   {
     id: 4,
-    title: "Sports",
+    title: 'Sports',
     items: 13,
   },
   {
     id: 5,
-    title: "Outing",
+    title: 'Outing',
     items: 11,
   },
-];
+]
 export const blogTags = [
   {
     id: 1,
-    title: "Paid Marketing",
+    title: 'Paid Marketing',
   },
   {
     id: 2,
-    title: "Digital Marketing",
+    title: 'Digital Marketing',
   },
   {
     id: 3,
-    title: "Blues",
+    title: 'Blues',
   },
   {
     id: 4,
-    title: "COVID",
+    title: 'COVID',
   },
   {
     id: 5,
-    title: "Web Design",
+    title: 'Web Design',
   },
   {
     id: 6,
-    title: "Content Marketing",
+    title: 'Content Marketing',
   },
-];
+]
 export const blogPopularPosts = [
   {
     id: 1,
-    title: "Save Thousands Of Lives com This NFT",
-    time: "22 July, 2021",
-    img: "https://html-tokenmart.netlify.app/light/assets/images/blog/14.jpg",
+    title: 'Save Thousands Of Lives com This NFT',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/14.jpg',
   },
   {
     id: 2,
-    title: "Honoring Black History Month with Toddlers",
-    time: "22 July, 2021",
-    img: "https://html-tokenmart.netlify.app/light/assets/images/blog/15.jpg",
+    title: 'Honoring Black History Month with Toddlers',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/15.jpg',
   },
   {
     id: 3,
-    title: "NFT Market – A Compact Trike with the Big Benefits",
-    time: "22 July, 2021",
-    img: "https://html-tokenmart.netlify.app/light/assets/images/blog/16.jpg",
+    title: 'NFT Market – A Compact Trike with the Big Benefits',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/16.jpg',
   },
   {
     id: 4,
-    title: "Clever Ways to Purchase Extr s from NFT Market",
-    time: "22 July, 2021",
-    img: "https://html-tokenmart.netlify.app/light/assets/images/blog/17.jpg",
+    title: 'Clever Ways to Purchase Extr s from NFT Market',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/17.jpg',
   },
   {
     id: 5,
-    title: "The Revolutionary Functionali Seat & Stroller",
-    time: "22 July, 2021",
-    img: "https://html-tokenmart.netlify.app/light/assets/images/blog/18.jpg",
+    title: 'The Revolutionary Functionali Seat & Stroller',
+    time: '22 July, 2021',
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/blog/18.jpg',
   },
-];
+]
+
+export const tacData = [
+  {
+    id: 1,
+    heading: 'Information We Collect and Receive',
+    detail:
+      'This Term Conditions applies to all websites that we own and operate, including www.clarizent.com, our applications and/or APIs, and online services (our “Website”), as well as our other services, offerings, and other interactions (e.g., when you send us e-mails, subscribe to our newsletter, sign up for special reports, purchase products and services, attend our events, request information, or otherwise engage with us (together with our Website, collectively referred to as our “Services”).',
+  },
+  {
+    id: 2,
+    heading: 'Information Collected',
+    detail:
+      'This Term Conditions applies to all websites that we own and operate, including www.clarizent.com, our applications and/or APIs, and online services (our “Website”), as well as our other services, offerings, and other interactions (e.g., when you send us e-mails, subscribe to our newsletter, sign up for special reports, purchase products and services, attend our events, request information, or otherwise engage with us (together with our Website, collectively referred to as our “Services”).',
+  },
+  {
+    id: 3,
+    heading: 'How We Use',
+    detail:
+      'This Term Conditions applies to all websites that we own and operate, including www.clarizent.com, our applications and/or APIs, and online services (our “Website”), as well as our other services, offerings, and other interactions (e.g., when you send us e-mails, subscribe to our newsletter, sign up for special reports, purchase products and services, attend our events, request information, or otherwise engage with us (together with our Website, collectively referred to as our “Services”).',
+  },
+  {
+    id: 4,
+    heading: 'How We Share',
+    detail:
+      'This Term Conditions applies to all websites that we own and operate, including www.clarizent.com, our applications and/or APIs, and online services (our “Website”), as well as our other services, offerings, and other interactions (e.g., when you send us e-mails, subscribe to our newsletter, sign up for special reports, purchase products and services, attend our events, request information, or otherwise engage with us (together with our Website, collectively referred to as our “Services”).',
+  },
+  {
+    id: 5,
+    heading: '1. Information you provide us',
+    detail:
+      'This Term Conditions applies to all websites that we own and operate, including www.clarizent.com, our applications and/or APIs, and online services (our “Website”), as well as our other services, offerings, and other interactions (e.g., when you send us e-mails, subscribe to our newsletter, sign up for special reports, purchase products and services, attend our events, request information, or otherwise engage with us (together with our Website, collectively referred to as our “Services”).',
+  },
+  {
+    id: 6,
+    heading: '2. Information we collect from others',
+    detail:
+      'This Term Conditions applies to all websites that we own and operate, including www.clarizent.com, our applications and/or APIs, and online services (our “Website”), as well as our other services, offerings, and other interactions (e.g., when you send us e-mails, subscribe to our newsletter, sign up for special reports, purchase products and services, attend our events, request information, or otherwise engage with us (together with our Website, collectively referred to as our “Services”).',
+  },
+]
+
+export const MarketActivityData = [
+  {
+    id: 1,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/18.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Listed by ',
+    by: '@Leslie_Alexander',
+    time: '1 mins ago',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon.svg',
+    color: 'bg-pink-100',
+    iconBg: 'bg-pink-200',
+  },
+  {
+    id: 2,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/19.jpg',
+    title: 'Jhon Doe',
+    activity: 'Started following ',
+    by: '@Floyd_Miles',
+    time: '1 mins ago',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
+  },
+  {
+    id: 3,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/20.jpg',
+    title: 'Jhon Doe',
+    activity: 'Started following ',
+    by: '@Ronald_Richards',
+    time: '1 mins ago',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
+  },
+  {
+    id: 4,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/21.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Removed following ',
+    by: '@Dianne_Russell',
+    time: '1 mins ago',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon2.svg',
+    color: 'bg-blue-100',
+    iconBg: 'bg-blue-200',
+  },
+  {
+    id: 5,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/22.jpg',
+    title: 'Untitled',
+    activity: 'Purchased  for 0.11 ETH by ',
+    by: '@Darrell_Steward',
+    time: '10 mins ago',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon4.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
+  },
+  {
+    id: 6,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/23.jpg',
+    title: 'Untitled',
+    activity: 'Purchased for 0.11 ETH by ',
+    by: '@Marvin McKinney',
+    time: '10 mins ago',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon4.svg',
+    color: 'bg-green-100',
+    iconBg: 'bg-green-200',
+  },
+  {
+    id: 7,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/24.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Bid Placed for 0.0021 ETH by ',
+    by: '@Jerome_Bell',
+    time: '1 mins ago',
+    iconImg:
+      '	https://html-tokenmart.netlify.app/light/assets/images/activity-icon5.svg',
+    color: 'bg-purple-100',
+    iconBg: 'bg-purple-200',
+  },
+  {
+    id: 8,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/25.jpg',
+    title: 'Top VIP Pass #12',
+    activity: 'Bid Placed  for 0.0021 ETH by ',
+    by: '@Courtney_Henry',
+    time: '1 mins ago',
+    iconImg:
+      '	https://html-tokenmart.netlify.app/light/assets/images/activity-icon5.svg',
+    color: 'bg-purple-100',
+    iconBg: 'bg-purple-200',
+  },
+  {
+    id: 9,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/26.jpg',
+    title: 'Eye for an Eye Platinum Lil Bitcoin',
+    activity: 'Liked by ',
+    by: '@Theresa_Webb',
+    time: 'just now',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon6.svg',
+    color: 'bg-pink-100',
+    iconBg: 'bg-pink-200',
+  },
+  {
+    id: 10,
+    img: 'https://html-tokenmart.netlify.app/light/assets/images/product/27.jpg',
+    title: 'Eye for an Eye Platinum Lil Bitcoin',
+    activity: 'Liked by ',
+    by: '@Kathryn_Murphy',
+    time: 'just now',
+    iconImg:
+      'https://html-tokenmart.netlify.app/light/assets/images/activity-icon6.svg',
+    color: 'bg-pink-100',
+    iconBg: 'bg-pink-200',
+  },
+]

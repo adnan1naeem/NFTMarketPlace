@@ -1,7 +1,7 @@
 import { Box, styled, Typography } from '@mui/material'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import arrow from '../../../../assets/Images/explore/right-arrow.svg'
+import arrow from '../../../assets/Images/explore/right-arrow.svg'
 
 const Heading = styled(Typography)(({ theme }) => ({
   fontFamily: 'Nunito',
@@ -26,16 +26,14 @@ export const Header = () => {
   return (
     <div className='mt-40'>
       <Box sx={{ display: 'flex', margin: '20px 0%' }}>
-        <Heading>NFT Market – Big Benefits of Selling</Heading>
+        <Heading>Activity</Heading>
       </Box>
       <Box sx={{ display: 'flex', margin: '-1% 0%', alignItems: 'center' }}>
         <Text onClick={() => navigate('/')}>Home</Text>
         <img src={arrow} alt='' style={{ margin: '0px 5px' }} />
         <Text onClick={() => navigate('/explore')}>Explore</Text>
         <img src={arrow} alt='' style={{ margin: '0px 5px' }} />
-        <Text sx={{ color: '#327bf0' }}>
-          NFT Market – Big Benefits of Selling
-        </Text>
+        <Text sx={{ color: '#327bf0' }}>Activity</Text>
       </Box>
     </div>
   )

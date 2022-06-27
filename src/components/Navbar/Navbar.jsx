@@ -341,37 +341,38 @@ const Navbar = ({ screen }) => {
                       <h1 className=''>Contact</h1>
                     </div>
                     <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                      <h1 className=''>Term & Condition</h1>
+                      <NavLink to='/termsandconditions'>
+                        {' '}
+                        <h1 className=''>Term & Condition</h1>{' '}
+                      </NavLink>
                     </div>
                     <div className='w-full h-10 hover:bg-blue-200 flex items-center justify-start pl-2'>
-                      <h1 className=''>404</h1>
+                      <NavLink to='/error404'>
+                        {' '}
+                        <h1 className=''>404</h1>{' '}
+                      </NavLink>
                     </div>
                   </div>
                 </NavLink>
 
-                {/* these following four closing tags are to be removed before uncomment below content */}
-              </div>
-
-              {/* {/*
-
                 <NavLink
-                  to=""
+                  to='/activity'
                   className={`m-2 mr-2 xl:mr-6 2xl:mr-11 block mt-4 lg:inline-block lg:mt-0 font-body text-base
       
             `}
                 >
-                  <span className="flex">
-                    {" "}
+                  <span className='flex'>
+                    {' '}
                     Activity
-                    <div className="w-3 h-3 mt-2 ml-2">
+                    <div className='w-3 h-3 mt-2 ml-2'>
                       <img
                         src={images.arrow}
-                        style={{ width: "100%", height: "100%" }}
+                        style={{ width: '100%', height: '100%' }}
                       />
                     </div>
-                  </span> 
+                  </span>
                 </NavLink>
-              </div>*/}
+              </div>
               <div className='w-60 h-12 shadow bg-white shadow-lg -mt-1 lg:ml-10 hidden lg:flex items-center justify-center rounded-lg'>
                 <div className='w-5 h-5'>
                   <img
