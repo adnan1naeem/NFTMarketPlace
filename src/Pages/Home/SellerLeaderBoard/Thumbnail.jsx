@@ -22,7 +22,6 @@ const Card = styled(Box)(({ theme }) => ({
   marginBottom: 30,
   padding: "1% 0%",
   transition: "box-shadow .5s ease-in-out",
-
   "&:hover": {
     boxShadow: "0 1rem 3rem rgba(0,0,0,.175)",
     transition: "box-shadow .5s ease",

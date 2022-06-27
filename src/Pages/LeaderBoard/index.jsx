@@ -11,7 +11,9 @@ export const LeaderBoard = () => {
     <Box>
       <Navbar />
       <Header />
-      <LeaderBoardThumbnail data={LeaderboardData} show={false} />
+      <Box sx={{ marginBottom: "7%", overflowX: "auto" }}>
+        <LeaderBoardThumbnail data={LeaderboardData} show={false} />
+      </Box>
     </Box>
   );
 };
