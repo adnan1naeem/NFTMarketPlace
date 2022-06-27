@@ -30,14 +30,14 @@ const Writers = () => {
         </div>
       </div>
 
-      <div className='w-40 mt-2 flex items-center justify-end '>
+      <div className='w-40 mt-2 flex items-center justify-center  sm:justify-end '>
         <div className='text-center sm:text-right'>
           <h1 className='font-semibold'>Published on</h1>
           <h1 className='text-gray-600'>02 Feb 2021</h1>
         </div>
       </div>
 
-      <div className='w-56 mt-2 flex items-center justify-end '>
+      <div className='w-56 mt-2 flex items-center justify-center sm:justify-end '>
         <div className='text-center sm:text-right'>
           <h1 className='font-semibold'>Last Updated</h1>
           <h1 className='text-gray-600'>02 Feb 2022 at 1:36 a.m. ET</h1>

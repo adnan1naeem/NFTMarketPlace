@@ -9,16 +9,18 @@ import { FormHeader } from './CommentsForm/FormHeader'
 import { ExistingComments } from './ExistingComments'
 export const BlogDetails = () => {
   return (
-    <>
-      <Navbar />
-      <Box sx={{ margin: '5% 7%' }}>
-        <Header />
-        <BlogHeader />
-        <AboutAuthor />
-        <ExistingComments />
-        <FormHeader />
-        <CommentsForm />
-      </Box>
-    </>
+    <div className='flex flex-col items-center'>
+      <div style={{ maxWidth: '1900px' }}>
+        <Navbar />
+        <Box sx={{ margin: '5% 7%' }}>
+          <Header />
+          <BlogHeader />
+          <AboutAuthor />
+          <ExistingComments />
+          <FormHeader />
+          <CommentsForm />
+        </Box>
+      </div>
+    </div>
   )
 }
