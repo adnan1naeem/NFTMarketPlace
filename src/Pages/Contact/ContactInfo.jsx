@@ -41,7 +41,7 @@ export const ContactInfo = () => {
       <NunitoText sx={{ fontWeight: 700, marginBottom: 1 }}>
         Here following or contact information
       </NunitoText>
-      <Flex sx={{ height: 30 }}>
+      <Flex sx={{ height: 50 }}>
         <img
           src={callIcon}
           alt=""
