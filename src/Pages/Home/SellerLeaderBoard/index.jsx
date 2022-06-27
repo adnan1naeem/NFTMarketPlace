@@ -1,11 +1,12 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { Thumbnail } from "./Thumbnail";
+import { LeaderBoardThumbnail } from "./Thumbnail";
+import { sellerLeaderboardData } from "assets/Data";
 
 export const SellerLeaderBorad = () => {
   return (
     <Box sx={{ overflowX: "auto" }}>
-      <Thumbnail />
+      <LeaderBoardThumbnail data={sellerLeaderboardData} show={true} />
     </Box>
   );
 };

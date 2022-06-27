@@ -14,6 +14,8 @@ import { Category } from "Pages/Blogs/Category";
 import { Tag } from "Pages/Blogs/Tag";
 import { BlogGrid } from "Pages/Blogs/BlogGrid";
 import { BlogDetails } from "Pages/Blogs/BlogsDetails";
+import { ContactUs } from "Pages/Contact";
+import { LeaderBoard } from "Pages/LeaderBoard";
 
 const NFTRoutes = () => {
   return (
@@ -46,6 +48,8 @@ const NFTRoutes = () => {
         <Route path="/authorsprofiles/:id" element={<AuthorsProfiles />} />
         <Route path="/createitem" element={<CreateItem />} />
         <Route path="/blogdetails" element={<BlogDetails />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/leaderboard" element={<LeaderBoard />} />
       </Routes>
     </BrowserRouter>
   );

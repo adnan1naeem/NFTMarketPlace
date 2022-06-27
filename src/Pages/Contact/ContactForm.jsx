@@ -1,38 +1,47 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import Error from "components/UI/Error";
 import FormField from "components/UI/FormikField";
 import { Flex } from "components/UI/Flex";
-const Label = styled(Typography)(({ theme }) => ({
-  fontFamily: "Manrope",
-  fontSize: 16,
-  color: "#475569",
-  marginBottom: "10px",
-  fontWeight: 500,
-}));
+import { TextArea } from "components/UI/TextArea";
+import { NunitoText } from "components/UI/NunitoText";
+
 const Form = styled("form")(({ theme }) => ({}));
 
 const initialValues = {
   email: "",
+  password: "",
 };
 
 //creating the validation schema
 const validationSchema = yup.object().shape({
+  name: yup
+    .string()
+    .required("Name is required")
+    .min(2, "Name must be at least 2 characters"),
   email: yup.string().email("Invalid email").required("Required"),
 });
 
-function ForgotPasswordForm({ onSubmit }) {
+export const ContactForm = ({ onSubmit }) => {
   const formik = useFormik({
     initialValues,
     validationSchema,
     onSubmit,
   });
+  const navigate = useNavigate();
   const emailProps = formik.getFieldProps("email");
+  const nameProps = formik.getFieldProps("name");
   return (
     <>
+      <Flex sx={{ marginBottom: 3 }}>
+        <NunitoText sx={{ fontSize: "1.5rem", fontWeight: 700 }}>
+          Send Message
+        </NunitoText>
+      </Flex>
       <Form
         onSubmit={({ values, FormikBag }) => {
           FormikBag.resetForm({});
@@ -42,22 +51,53 @@ function ForgotPasswordForm({ onSubmit }) {
           sx={{
             flexDirection: "column",
             alignItems: "flex-start",
-            height: 120,
+            height: 90,
           }}
         >
-          <Label>Email *</Label>
-
+          <FormField
+            label="First Name"
+            type="text"
+            placeholder="Name..."
+            {...nameProps}
+          />
+          {formik.touched.email && formik.errors.email ? (
+            <Error message={formik.errors.firstName} />
+          ) : null}
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            alignItems: "flex-start",
+            height: 90,
+          }}
+        >
           <FormField
             label="Email"
             type="email"
-            placeholder="Please Enter your email"
+            placeholder="Email ..."
             {...emailProps}
           />
           {formik.touched.email && formik.errors.email ? (
             <Error message={formik.errors.email} />
           ) : null}
         </Flex>
-
+        <Flex
+          sx={{
+            flexDirection: "column",
+            alignItems: "flex-start",
+            height: 90,
+          }}
+        >
+          <FormField label="subject" type="etext" placeholder="Subject" />
+        </Flex>
+        <Flex
+          sx={{
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
+          <TextArea placeholder="Your Message" />
+        </Flex>
         <Box
           marginTop={"3rem"}
           marginBottom="2rem"
@@ -73,7 +113,7 @@ function ForgotPasswordForm({ onSubmit }) {
               background: "#6764f0",
               color: "white",
               fontFamily: "Manrope",
-              fontWeight: 600,
+              fontWeight: 500,
               fontSize: "16px",
               padding: "10px 30px",
               "&:hover": {
@@ -87,12 +127,10 @@ function ForgotPasswordForm({ onSubmit }) {
             }}
             endIcon={<HiOutlineArrowNarrowRight />}
           >
-            Get Code
+            Send Message
           </Button>
         </Box>
       </Form>
     </>
   );
-}
-
-export default ForgotPasswordForm;
+};
