@@ -8,7 +8,13 @@ import { Header } from "./Header";
 
 export const LeaderBoard = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
       <Navbar />
       <Header />
       <Box sx={{ marginBottom: "7%", overflowX: "auto" }}>

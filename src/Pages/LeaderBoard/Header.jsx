@@ -24,7 +24,11 @@ const Text = styled(Typography)(({ theme }) => ({
 export const Header = () => {
   const navigate = useNavigate();
   return (
-    <Box sx={{ margin: "7% 7%" }}>
+    <Box
+      sx={{
+        margin: "7% 7%",
+      }}
+    >
       <Box sx={{ display: "flex" }}>
         <Heading>LeaderBoard</Heading>
       </Box>
