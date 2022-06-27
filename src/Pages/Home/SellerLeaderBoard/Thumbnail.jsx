@@ -48,7 +48,7 @@ export const LeaderBoardThumbnail = ({ data, show }) => {
   const navigate = useNavigate();
   const isMobile = useMediaQuery("(max-width:600px)");
   return (
-    <>
+    <Box sx={{ maxWidth: 1900 }}>
       <Flex
         sx={{
           justifyContent: "space-between",
@@ -89,78 +89,73 @@ export const LeaderBoardThumbnail = ({ data, show }) => {
           <HiOutlineArrowNarrowRight />
         </Flex>
       </Flex>
+
       <Root>
         {data.map((item) => (
           <NavLink to={`/authors/${item?.id}`}>
             <Card key={item.id}>
-              <Grid container spacing={3}>
-                <Grid item xs={4}>
-                  <Flex>
-                    <Flex
-                      sx={{
-                        color: "rgba(15,23,42)",
-                        fontSize: "18px",
-                        fontWeight: 600,
-                        fontFamily: "Manrope",
-                        margin: "0px 10px",
-                      }}
-                    >
-                      <Box
-                        sx={{
-                          color: "rgba(71,85,105)",
-                          fontSize: "20px",
-                          display: "flex",
-                          alignItems: "center",
-                        }}
-                      >
-                        <Box sx={{ color: item.color }}>{item.icon}</Box>
+              <Flex>
+                <Flex
+                  sx={{
+                    color: "rgba(15,23,42)",
+                    fontSize: "18px",
+                    fontWeight: 600,
+                    fontFamily: "Manrope",
+                    margin: "0px 10px",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      color: "rgba(71,85,105)",
+                      fontSize: "20px",
+                      display: "flex",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Box sx={{ color: item.color }}>{item.icon}</Box>
 
-                        {item.rank}
-                      </Box>
-                    </Flex>
-                    <Image src={item.pic} />
-                    <Box>
-                      <Text
-                        style={{
-                          color: "#0F172A",
-                          fontSize: "18px",
-                          width: "250px",
-                        }}
-                      >
-                        {item.name}
-                      </Text>
-                      <Flex
-                        sx={{
-                          alignItems: "center",
-                          display: show ? "none" : "flex",
-                        }}
-                      >
-                        <img
-                          src={diamond}
-                          alt=""
-                          style={{
-                            width: "1rem",
-                            height: "1rem",
-                            marginTop: 1,
-                            marginRight: 2,
-                          }}
-                        />
-                        Diamond Seller
-                      </Flex>
-                    </Box>
+                    {item.rank}
+                  </Box>
+                </Flex>
+                <Image src={item.pic} />
+                <Box>
+                  <Text
+                    style={{
+                      color: "#0F172A",
+                      fontSize: "18px",
+                      width: "250px",
+                    }}
+                  >
+                    {item.name}
+                  </Text>
+                  <Flex
+                    sx={{
+                      alignItems: "center",
+                      display: show ? "none" : "flex",
+                    }}
+                  >
+                    <img
+                      src={diamond}
+                      alt=""
+                      style={{
+                        width: "1rem",
+                        height: "1rem",
+                        marginTop: 1,
+                        marginRight: 2,
+                      }}
+                    />
+                    Diamond Seller
                   </Flex>
-                </Grid>
-                <Grid item xs={3}>
-                  <Stats />
-                </Grid>
-                <Grid item xs={4}>
-                  <Products items={item.items} />
-                </Grid>
-              </Grid>
+                </Box>
+              </Flex>
+
+              <Stats />
+
+              <Products items={item.items} />
             </Card>
           </NavLink>
         ))}
       </Root>
-    </>
+    </Box>
   );
 };

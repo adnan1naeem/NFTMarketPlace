@@ -5,7 +5,7 @@ import heart from "../../../assets/Images/Seller LeaderBoard/heart.svg";
 import items from "../../../assets/Images/Seller LeaderBoard/items.svg";
 import { Typography } from "@mui/material";
 const Flex = styled(Box)(({ theme }) => ({
-  // width: 540,
+  width: 340,
   justifyContent: "center",
   display: "flex",
 
