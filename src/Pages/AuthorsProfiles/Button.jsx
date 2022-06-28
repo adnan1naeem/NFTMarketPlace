@@ -58,7 +58,9 @@ export const Buttons = () => {
         <Button>Activity</Button>
       </NavLink>
       <ActiveButton>Followers (6)</ActiveButton>
-      <Button>Edit Profile</Button>
+      <NavLink to='/editprofile'>
+        <Button>Edit Profile</Button>
+      </NavLink>
       <Button>Logout</Button>
     </Box>
   )

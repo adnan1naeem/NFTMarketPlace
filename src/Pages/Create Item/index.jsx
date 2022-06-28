@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NewItemDetails } from './Details'
 import { CreateItemHeader } from './Header'
 import defaultimg from '../../assets/Images/CreateItem/defaultimg.jpg'
@@ -9,7 +9,9 @@ import { NunitoText } from 'components/UI/NunitoText'
 import Navbar from 'components/Navbar/Navbar'
 export const CreateItem = () => {
   const [url, setUrl] = useState(defaultimg)
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='sm:flex sm:flex-col sm:items-center'>
       <div style={{ maxWidth: '1900px' }}>

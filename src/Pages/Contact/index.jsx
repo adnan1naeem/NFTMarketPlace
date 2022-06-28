@@ -1,6 +1,6 @@
 import { Box, Grid, styled, useMediaQuery } from '@mui/material'
 import Navbar from 'components/Navbar/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ContactForm } from './ContactForm'
 import { ContactInfo } from './ContactInfo'
 import { Header } from './Header'
@@ -12,6 +12,9 @@ const Wrapper = styled(Box)(({ theme }) => ({
 }))
 export const ContactUs = () => {
   const isTab = useMediaQuery('(max-width:768px)')
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='sm:flex sm:flex-col sm:items-center'>
       <div style={{ maxWidth: '1900px' }}>

@@ -11,8 +11,7 @@ import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 import img from '../../../assets/Images/Seller LeaderBoard/sec-icon3.svg'
 import diamond from '../../../assets/Images/LeaderBoard/diamond-icon.svg'
 const Root = styled(Box)(({ theme }) => ({
-  margin: '10px 7%',
-  width: '100%',
+  // padding: '10px 7%',
 }))
 const Card = styled(Box)(({ theme }) => ({
   borderRadius: '8px',

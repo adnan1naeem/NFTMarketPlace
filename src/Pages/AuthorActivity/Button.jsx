@@ -58,7 +58,9 @@ export const Buttons = () => {
       <NavLink to={`/authorsprofiles/${id}`}>
         <Button>Followers (6)</Button>
       </NavLink>
-      <Button>Edit Profile</Button>
+      <NavLink to='/editprofile'>
+        <Button>Edit Profile</Button>
+      </NavLink>
       <Button>Logout</Button>
     </Box>
   )

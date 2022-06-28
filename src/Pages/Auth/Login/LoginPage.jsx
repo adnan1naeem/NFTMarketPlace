@@ -1,7 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material'
 import { styled } from '@mui/system'
 import Navbar from 'components/Navbar/Navbar'
-import React from 'react'
+import React, { useEffect } from 'react'
 import LoginForm from './LoginForm'
 const Heading = styled(Typography)(({ theme }) => ({
   fontFamily: 'Nunito',
@@ -22,6 +22,9 @@ const Text = styled(Typography)(({ theme }) => ({
   },
 }))
 export const LoginPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Navbar />

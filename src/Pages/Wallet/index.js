@@ -1,6 +1,6 @@
 import { styled, Typography } from '@mui/material'
 import { Box } from '@mui/system'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import arrow from '../../assets/Images/explore/right-arrow.svg'
 import Navbar from 'components/Navbar/Navbar'
@@ -21,6 +21,9 @@ const Text = styled(Typography)(({ theme }) => ({
 }))
 const Wallet = () => {
   const navigate = useNavigate()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='flex flex-col items-center'>
       <div style={{ marginBottom: '5rem', maxWidth: '1900px' }}>

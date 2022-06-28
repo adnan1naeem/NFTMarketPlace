@@ -12,10 +12,10 @@ const Search = () => {
       return exploreData.heading.toLowerCase().includes(input.toLowerCase())
     })
     setSearchList(filtered)
-    console.log('filtered list is ', filtered)
   }
   useEffect(() => {
     updateInput()
+    window.scrollTo(0, 0)
   }, [input])
   return (
     <div>

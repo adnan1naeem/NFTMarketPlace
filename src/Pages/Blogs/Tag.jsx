@@ -3,9 +3,12 @@ import { blogsCategoryData } from 'assets/Data'
 import Navbar from 'components/Navbar/Navbar'
 import { NunitoText } from 'components/UI/NunitoText'
 import { BlogCard } from 'Pages/Home/Blogs/Card'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export const Tag = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='sm:flex sm:flex-col sm:items-center'>
       <div style={{ maxWidth: '1900px' }}>

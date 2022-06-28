@@ -9,6 +9,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import logo from "../../assets/Images/logo.svg";
+import { useNavigate } from "react-router";
 const IconBox = styled(Box)(({ theme }) => ({
   height: 40,
   width: 40,
@@ -27,20 +28,21 @@ const IconBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {},
 }));
 export const SocialMedia = () => {
+  const navigate = useNavigate();
   return (
     <Box sx={{ marginBottom: 5 }}>
       <img src={logo} alt="" style={{ marginBottom: "3rem" }} />
       <Flex>
-        <IconBox>
+        <IconBox onClick={() => window.open("https://facebook.com")}>
           <FaFacebookF />
         </IconBox>
-        <IconBox>
+        <IconBox onClick={() => window.open("https://instagram.com")}>
           <FaInstagram />
         </IconBox>
-        <IconBox>
+        <IconBox onClick={() => window.open("https://twitter.com")}>
           <FaTwitter />
         </IconBox>
-        <IconBox>
+        <IconBox onClick={() => window.open("https://linkedin.com")}>
           <FaLinkedinIn />
         </IconBox>
       </Flex>

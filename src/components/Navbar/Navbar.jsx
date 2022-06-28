@@ -125,17 +125,7 @@ const Navbar = ({ screen }) => {
           
             `}
                 >
-                  <span className='flex'>
-                    {' '}
-                    Home
-                    <div className='w-3 h-3 mt-2 ml-2'>
-                      <img
-                        src={images.arrow}
-                        style={{ width: '100%', height: '100%' }}
-                        alt=''
-                      />
-                    </div>
-                  </span>
+                  <span className='flex'> Home</span>
                 </NavLink>
                 <NavLink
                   to=''
