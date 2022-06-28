@@ -2,12 +2,15 @@ import "./App.css";
 import { Footer } from "Pages/Footer";
 import NFTRoutes from "routes";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App" style={{}}>
-      <NFTRoutes />
-      <Footer />
+      <BrowserRouter>
+        <NFTRoutes />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

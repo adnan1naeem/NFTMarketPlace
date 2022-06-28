@@ -393,23 +393,23 @@ export const sellerLeaderboardData = [
   },
 ];
 export const navigationData = [
-  { text: "Home", id: "ho" },
-  { text: "Explore", id: "ex" },
-  { text: "Wallet", id: "wa" },
-  { text: "Author", id: "au" },
-  { text: "Terms", id: "te" },
+  { text: "Home", id: "ho", route: "/" },
+  { text: "Explore", id: "ex", route: "/explore" },
+  { text: "Wallet", id: "wa", route: "/wallet" },
+  { text: "Author", id: "au", route: `/authors/${1}` },
+  { text: "Terms", id: "termsandconditions" },
 ];
 export const exploreData = [
-  { text: "Explore Artwork", id: "ea" },
-  { text: "Single Artwork", id: "sa" },
-  { text: "Explore Creators", id: "ec" },
-  { text: "Single Creators", id: "sc" },
-  { text: "Community", id: "co" },
+  { text: "Explore Artwork", id: "ea", route: "/explore" },
+  { text: "Single Artwork", id: "sa", route: `/exploreitem/${1}` },
+  { text: "Explore Creators", id: "ec", route: "/leaderboard" },
+  { text: "Single Creators", id: "sc", route: `/authors/${1}` },
+  { text: "Community", id: "co", route: "/" },
 ];
 export const communityData = [
-  { text: "Item Details", id: "id" },
-  { text: "Activity", id: "ac" },
-  { text: "Contact", id: "cn" },
+  { text: "Item Details", id: "id", route: `/exploreitem/${1}` },
+  { text: "Activity", id: "ac", route: "/activity" },
+  { text: "Contact", id: "cn", route: "/contactus" },
 ];
 export const exploreCardData = [
   {

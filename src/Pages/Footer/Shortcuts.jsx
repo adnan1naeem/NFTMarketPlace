@@ -1,5 +1,6 @@
 import { Box, styled, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router";
 const Root = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
@@ -36,12 +37,15 @@ const Text = styled(Typography)(({ theme }) => ({
   },
 }));
 export const Shortcuts = ({ data, heading }) => {
+  const navigate = useNavigate();
   return (
     <Root key={data.id}>
       <Heading>{heading}</Heading>
       <Card>
         {data.map((item) => (
-          <Text key={item.id}>{item.text}</Text>
+          <Text key={item.id} onClick={() => navigate(item.route)}>
+            {item.text}
+          </Text>
         ))}
       </Card>
     </Root>
