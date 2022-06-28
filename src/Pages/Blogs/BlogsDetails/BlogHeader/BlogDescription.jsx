@@ -48,6 +48,7 @@ const BlogDescription = () => {
           <img
             className='w-1/2 mt-10'
             src='https://html-tokenmart.netlify.app/light/assets/images/featured-image2.jpg'
+            alt=''
           />
         </div>
         <p className='mt-5'>

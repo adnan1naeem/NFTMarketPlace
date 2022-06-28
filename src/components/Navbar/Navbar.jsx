@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { images } from 'assets/Images'
 import { useDispatch, useSelector } from 'react-redux'
 import {
@@ -9,7 +9,6 @@ import {
 const Navbar = ({ screen }) => {
   // const {props:any}= props`
   const dispatch = useDispatch()
-  const location = useLocation()
   const state = useSelector((state) => state)
   const [hidden, setHidden] = useState(true)
   const [showExploreMenu, setShowExploreMenu] = useState(false)
@@ -18,6 +17,7 @@ const Navbar = ({ screen }) => {
   const [showSubUserMenu, setShowSubUserMenu] = useState(false)
   const [showSubBlogMenu, setShowSubBlogMenu] = useState(false)
   const [scroll, setScroll] = useState(false)
+  const [searchInput, setSearchInput] = useState()
   const openMobileNav = () => {
     setHidden(!hidden)
   }
@@ -39,7 +39,6 @@ const Navbar = ({ screen }) => {
   const connectToMetaMask = () => {
     dispatch(connectMetaMask())
   }
-
   useEffect(() => {
     console.log(
       'connection is :',
@@ -133,6 +132,7 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: '100%', height: '100%' }}
+                        alt=''
                       />
                     </div>
                   </span>
@@ -152,6 +152,7 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: '100%', height: '100%' }}
+                        alt=''
                       />
                     </div>
                   </span>
@@ -194,6 +195,7 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: '100%', height: '100%' }}
+                        alt=''
                       />
                     </div>
                   </span>
@@ -224,6 +226,7 @@ const Navbar = ({ screen }) => {
                           <img
                             src={images.rightArrow}
                             style={{ width: '100%', height: '100%' }}
+                            alt=''
                           />
                         </div>
                       </span>
@@ -266,6 +269,7 @@ const Navbar = ({ screen }) => {
                           <img
                             src={images.rightArrow}
                             style={{ width: '100%', height: '100%' }}
+                            alt=''
                           />
                         </div>
                       </span>
@@ -371,21 +375,29 @@ const Navbar = ({ screen }) => {
                       <img
                         src={images.arrow}
                         style={{ width: '100%', height: '100%' }}
+                        alt=''
                       />
                     </div>
                   </span>
                 </NavLink>
               </div>
               <div className='w-60 h-12 shadow bg-white shadow-lg -mt-1 lg:ml-10 hidden lg:flex items-center justify-center rounded-lg'>
-                <div className='w-5 h-5'>
-                  <img
-                    src={images.search}
-                    style={{ width: '100%', height: '100%' }}
-                  />
-                </div>
+                <NavLink to={`/search/${searchInput}`}>
+                  <div className='w-5 h-5'>
+                    <img
+                      src={images.search}
+                      style={{ width: '100%', height: '100%' }}
+                      alt=''
+                    />
+                  </div>
+                </NavLink>
                 <div>
                   <input
                     type='text'
+                    value={searchInput}
+                    onChange={(e) => {
+                      setSearchInput(e.target.value)
+                    }}
                     placeholder='Search items'
                     className='w-40 h-7 focus:outline-none ml-2 '
                   />

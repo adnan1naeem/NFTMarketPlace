@@ -13,7 +13,11 @@ const SearchCard = () => {
           />
         </div>
         <div className='w-5 h-5'>
-          <img src={images.search} style={{ width: '100%', height: '100%' }} />
+          <img
+            src={images.search}
+            style={{ width: '100%', height: '100%' }}
+            alt=''
+          />
         </div>
       </div>
     </div>

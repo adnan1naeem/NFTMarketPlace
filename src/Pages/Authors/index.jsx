@@ -4,7 +4,6 @@ import React, { useEffect } from 'react'
 import { Buttons } from './Button'
 import { Thumbnail } from 'Pages/Explore/Thumbnail'
 import { exploreCardData } from 'assets/Data'
-import LoadingButton from 'components/UI/LoadingButton'
 const Authors = () => {
   useEffect(() => {
     window.scrollTo(0, 0)

@@ -8,6 +8,7 @@ const Writers = () => {
             className='rounded-full object-cover'
             style={{ width: '100%', height: '100%' }}
             src='https://html-tokenmart.netlify.app/light/assets/images/author/3.jpg'
+            alt=''
           />
         </div>
         <div className='pl-2'>
@@ -22,6 +23,7 @@ const Writers = () => {
             className='rounded-full object-cover'
             style={{ width: '100%', height: '100%' }}
             src='	https://html-tokenmart.netlify.app/light/assets/images/author/4.jpg'
+            alt=''
           />
         </div>
         <div className='pl-2'>

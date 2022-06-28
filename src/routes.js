@@ -19,6 +19,7 @@ import Activity from 'Pages/Activity'
 import Error from 'Pages/404'
 import { ContactUs } from 'Pages/Contact'
 import { LeaderBoard } from 'Pages/LeaderBoard'
+import Search from 'Pages/Search'
 const NFTRoutes = () => {
   return (
     <BrowserRouter>
@@ -48,6 +49,7 @@ const NFTRoutes = () => {
         <Route path='/authors/:id' element={<Authors />} />
         <Route path='/authoractivity/:id' element={<AuthorActivity />} />
         <Route path='/authorsprofiles/:id' element={<AuthorsProfiles />} />
+        <Route path='/search/:input' element={<Search />} />
         <Route path='/createitem' element={<CreateItem />} />
         <Route path='/blogdetails' element={<BlogDetails />} />
         <Route path='/termsandconditions' element={<Tac />} />
