@@ -1,6 +1,7 @@
 import NftView from 'components/NftView/NftView'
 import { nftCollectionData } from '../../../assets/Data.js'
 import React, { useState, useEffect } from 'react'
+import Web3Utils from 'web3-utils'
 import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
 import NftName from 'components/NftName/NftName.jsx'
@@ -29,23 +30,25 @@ const NftCollection = () => {
       signer
     )
     let arr = []
-    for (let i = 1; i < 9; i++) {
-      try {
+    try {
+      const size = await contract.getCollectionSize()
+      const sizeInNumber = Web3Utils.hexToNumber(size)
+      for (let i = 1; i <= sizeInNumber; i++) {
         const details = await contract.getNftInfo(i)
         if (details) {
-          console.log('details are ', details)
-          console.log(details[0])
           arr = [
             ...arr,
             { id: i, items: details[0], nftUrl: details[1], title: details[2] },
           ]
         }
-      } catch {
-        alert('Transaction failed')
       }
+    } catch {
+      alert('Transaction failed')
     }
+
     setContractNftData(arr)
   }
+
   useEffect(() => {
     if (connection) {
       getNfts()

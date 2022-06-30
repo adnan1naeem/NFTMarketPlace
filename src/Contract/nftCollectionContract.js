@@ -1,36 +1,64 @@
 export const SALE_CONTRACT_ADDRESS =
-  '0xF10C69EA5Bb32f25dE8bC9C17416Ba7c37E28217'
+  '0xAA2F8E7b31833bD24F75BA3AF1389A5b2cBAf8Ee'
 export const SALE_CONTRACT_ABI = [
   {
-    constant: false,
     inputs: [
       {
+        internalType: 'uint256',
         name: 'id',
         type: 'uint256',
       },
       {
+        internalType: 'string',
         name: 'name',
         type: 'string',
       },
       {
+        internalType: 'string',
         name: 'items',
         type: 'string',
       },
       {
+        internalType: 'string',
         name: 'link',
         type: 'string',
       },
     ],
     name: 'setNftInfo',
     outputs: [],
-    payable: false,
     stateMutability: 'nonpayable',
     type: 'function',
   },
   {
-    constant: true,
+    inputs: [],
+    name: 'count',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'getCollectionSize',
+    outputs: [
+      {
+        internalType: 'uint256',
+        name: '',
+        type: 'uint256',
+      },
+    ],
+    stateMutability: 'view',
+    type: 'function',
+  },
+  {
     inputs: [
       {
+        internalType: 'uint256',
         name: 'id',
         type: 'uint256',
       },
@@ -38,19 +66,21 @@ export const SALE_CONTRACT_ABI = [
     name: 'getNftInfo',
     outputs: [
       {
+        internalType: 'string',
         name: '',
         type: 'string',
       },
       {
+        internalType: 'string',
         name: '',
         type: 'string',
       },
       {
+        internalType: 'string',
         name: '',
         type: 'string',
       },
     ],
-    payable: false,
     stateMutability: 'view',
     type: 'function',
   },
