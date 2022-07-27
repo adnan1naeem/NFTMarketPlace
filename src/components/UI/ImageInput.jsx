@@ -21,9 +21,12 @@ const CustomButton = styled(Button)(({ theme }) => ({
     background: "#699dff",
   },
 }));
-export default function ImageInput({ setUrl }) {
+export default function ImageInput({ setUrl, setFileList }) {
   const handleFiles = (files) => {
     setUrl(files.base64);
+
+    console.log(files.fileList[0].name);
+    setFileList(files.fileList[0]);
   };
 
   return (
@@ -37,7 +40,7 @@ export default function ImageInput({ setUrl }) {
           <NunitoText
             sx={{ marginBottom: "10px", color: "#475569", fontWeight: 600 }}
           >
-            PNG, JPG, GIF, WEBP or MP4, MAX 300mb.
+            PNG, JPG, GIF or WEBP, MAX 300mb.
           </NunitoText>
           <CustomButton endIcon={<AiOutlineCloudUpload />}>
             Choose File
